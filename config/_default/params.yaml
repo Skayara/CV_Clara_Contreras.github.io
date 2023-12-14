@@ -55,8 +55,8 @@ footer:
 # Localization
 
 locale:
-  date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
+  date_format: '01/02/2006'
+  time_format: '15:04'
   address_format: en-us
 
 # Site features
@@ -70,7 +70,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/skayara/CV_Clara_Contreras'
     content_dir: content
     branch: main
   avatar:

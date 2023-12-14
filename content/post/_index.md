@@ -1,5 +1,5 @@
 ---
-title: Posts
+title: Certificaciones
 cms_exclude: true
 
 # View.

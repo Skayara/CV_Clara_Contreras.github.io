@@ -1,17 +1,10 @@
-# Sample workflow for building and deploying a Hugo/Jekyll site to GitHub Pages
-name: Deploy Website to GitHub Pages
-
-env:
-  WC_HUGO_VERSION: '0.119.0'
+name: Deploy Jekyll to GitHub Pages
 
 on:
-  # Trigger the workflow every time you push to the `main` branch
   push:
     branches: ["main"]
-  # Allows you to run this workflow manually from the Actions tab on GitHub
   workflow_dispatch:
 
-# Provide permission to clone the repo and deploy it to GitHub Pages
 permissions:
   contents: read
   pages: write
@@ -22,47 +15,32 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build website
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          # Fetch history for Hugo's .GitInfo and .Lastmod
-          fetch-depth: 0
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: ${{ env.WC_HUGO_VERSION }}
-          extended: true
-
-      - name: Cache Hugo modules
-        uses: actions/cache@v4
-        with:
-          path: /tmp/hugo_cache_runner/
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
-          restore-keys: |
-            ${{ runner.os }}-hugomod-
 
       - name: Setup Pages
-        id: pages
         uses: actions/configure-pages@v4
 
-      - name: Build with Hugo
-        env:
-          HUGO_ENVIRONMENT: production
-        run: |
-          echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./public
+          path: ./_site
 
-  # Deploy website to GitHub Pages hosting
   deploy:
     environment:
       name: github-pages
@@ -74,9 +52,6 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          # The artifact name must match the one used in the build job
-          artifact-name: public
-          # The branch to deploy to GitHub Pages
-          publish-branch: gh-pages
-          # The directory containing the built site
-          publish-dir: public
+          artifact-name: _site
+          branch: gh-pages
+          publish-dir: ./_site

@@ -1,11 +1,9 @@
 ---
-# Leave the homepage title empty to use the site title
 title: ""
 date: 2022-10-24
 type: landing
 
 design:
-  # Default section spacing
   spacing: "6rem"
 
 sections:
@@ -41,22 +39,13 @@ sections:
       username: admin
 
   - block: collection
-    id: talks
+    id: news
     content:
-      title: Ponencias y Divulgación
+      title: Últimas Publicaciones
+      page_type: post
+      count: 5
       filters:
-        folders: [event]
+        exclude_featured: false
     design:
-      view: article-grid
-      columns: 2
-
-  - block: collection
-    id: projects
-    content:
-      title: Proyectos
-      filters:
-        folders: [project]
-    design:
-      view: article-grid
-      columns: 2
+      view: date-title-summary
 ---

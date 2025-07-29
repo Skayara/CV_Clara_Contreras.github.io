@@ -63,13 +63,29 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - title: Ingeniera de ciberseguridad
+          company: Siemens Mobility
+          company_url: ''
+          company_logo: 
+          location: Madrid, Tres Cantos
+          date_start: '2024-12-01'
+          date_end: ''
+          description: |2-
+              Tareas:
+
+              * Supervisión capa de ciberseguridad productos I+D de infraestructura ferroviaria
+              * Formación de empleados en materia de ciberseguridad
+              * Pentesting
+              * Análisis de riesgos, modelado de amenazas y gestión de vulnerabilidades
+              * Cumplimiento normativo estándares y normativas
+              * Soporte en ciberseguridad al área de ingeniería en obras
         - title: Investigadora en DICYME (Dynamic Industrial CYberrisk Modelling based on Evidence)
           company: Universidad Rey Juan Carlos
           company_url: ''
           company_logo: 
           location: Madrid, Móstoles
           date_start: '2023-06-21'
-          date_end: ''
+          date_end: '2024-11-30'
           description: |2-
               Tareas:
 

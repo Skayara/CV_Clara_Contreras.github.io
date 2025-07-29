@@ -17,19 +17,19 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Investigadora en Ciberseguridad
+role: Ingeniera de Ciberseguridad
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Universidad Rey Juan Carlos
-    url: https://www.urjc.es/
+  - name: Siemens Mobility
+    url: https://www.mobility.siemens.com/es/es.html
 
 # # Short bio (displayed in user profile at end of posts)
 # bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 # Interests to show in About widget
 interests:
-  - Ciberseguridad
+  - Ciberseguridad IT/OT
   - Inteligencia Artificial
   - Data Science
 

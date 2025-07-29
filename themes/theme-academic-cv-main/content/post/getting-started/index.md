@@ -86,7 +86,7 @@ As a token of appreciation for sponsoring, you can **unlock [these](https://hugo
 - **Create content** in [**Markdown**](https://docs.hugoblox.com/content/writing-markdown-latex/), [**Jupyter**](https://docs.hugoblox.com/import/jupyter/), or [**RStudio**](https://docs.hugoblox.com/install-locally/)
 - **Plugin System** - Fully customizable [**color** and **font themes**](https://docs.hugoblox.com/customization/)
 - **Display Code and Math** - Code highlighting and [LaTeX math](https://en.wikibooks.org/wiki/LaTeX/Mathematics) supported
-- **Integrations** - [Google Analytics](https://analytics.google.com), [Disqus commenting](https://disqus.com), Maps, Contact Forms, and more!
+<!-- - **Integrations** - [Google Analytics](https://analytics.google.com), [Disqus commenting](https://disqus.com), Maps, Contact Forms, and more! -->
 - **Beautiful Site** - Simple and refreshing one page design
 - **Industry-Leading SEO** - Help get your website found on search engines and social media
 - **Media Galleries** - Display your images and videos with captions in a customizable gallery

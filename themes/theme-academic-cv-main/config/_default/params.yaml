@@ -11,6 +11,7 @@ appearance:
   font: minimal
   font_size: L
 
+
 # SEO
 
 marketing:
@@ -21,7 +22,7 @@ marketing:
     description: 'A highly-customizable Hugo academic resume theme powered by Hugo Blox Builder.'
     twitter: 'GetResearchDev'
   analytics:
-    google_analytics: ''
+    googleAnalytics: ''
     baidu_tongji: ''
     google_tag_manager: ''
     microsoft_clarity: ''

@@ -6,8 +6,9 @@ export const personalInfo = {
   location: "Madrid, España",                       
   linkedin: "linkedin.com/in/ccontrerasn",           
   github: "github.com/Skayara",                      
-  website: "https://mypublicinbox.com/Skayara",      
-  photo: "Foto4.jpg",                                 
+  website: "https://mypublicinbox.com/Skayara",
+  photo: "/images/Foto4.jpg", 
+  avatar: "/images/Foto4.jpg",                               
   summary: `Soy una persona inquieta, siempre en busca de crecimiento y aprendizaje. A lo largo de mi formación, he demostrado iniciativa y participación en actividades técnicas y de gestión. Me gusta investigar tecnologías y temas por mi cuenta, y suelo formar equipos para desarrollar proyectos personales de manera eficiente.`  // texto bajo \switchcolumn
 };
 
@@ -19,21 +20,22 @@ export const timelineData = [
     title: "Ingeniera de ciberseguridad",
     company: "Siemens Mobility",
     type: "trabajo",
-    description: `## Ingeniería de Ciberseguridad Ferroviaria
+description: `## Ingeniería de Ciberseguridad Ferroviaria
 
-Desarrollo e implementación de sistemas de seguridad para infraestructuras críticas de movilidad y transporte ferroviario.
+Participación en la creación del área de ciberseguridad de I+D para sistemas ferroviarios, garantizando el cumplimiento de estándares internacionales (IEC 62443, NIST, CRA, ISO) en productos y proyectos críticos.
 
 ### Responsabilidades Principales
-- Análisis de vulnerabilidades en sistemas ferroviarios
-- Implementación de protocolos de seguridad ICS/SCADA
-- Auditorías de ciberseguridad en infraestructura crítica
-- Desarrollo de planes de respuesta ante incidentes`,
-    achievements: [
-      "Implementación de SOC especializado en infraestructura ferroviaria",
-      "Reducción de 70% en tiempo de detección de amenazas",
-      "Certificación de 15 sistemas críticos bajo estándares internacionales"
-    ],
-    tags: ["Ciberseguridad", "SCADA", "Infraestructura Crítica", "Ferroviario"]
+- Evaluación y mitigación de vulnerabilidades en sistemas de señalización, control y estaciones ferroviarias.
+- Asesoría en la integración de medidas de ciberseguridad en nuevos desarrollos y obras ferroviarias.
+- Revisión y verificación de requisitos de ciberseguridad durante el ciclo de vida de productos y soluciones.
+- Desarrollo e impartición de formación interna, incluyendo un curso de 10 horas sobre Secure Coding para equipos de desarrollo.`,
+achievements: [
+  "Creación y puesta en marcha del área de ciberseguridad aplicada a I+D ferroviaria",
+  "Certificación de sistemas críticos bajo estándares internacionales (IEC 62443, NIST, ISO)",
+  "Diseño e impartición de un programa formativo interno en Secure Coding"
+],
+tags: ["Ciberseguridad", "SCADA", "Infraestructura Crítica", "Ferroviario", "IEC 62443", "NIST"]
+
   },
   {
     id: 2,

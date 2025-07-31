@@ -17,7 +17,7 @@ const Timeline = () => {
     congreso: { color: 'from-red-500 to-pink-500', bg: 'bg-red-50', text: 'text-red-700', label: 'Congresos' },
     certificacion: { color: 'from-indigo-500 to-violet-600', bg: 'bg-indigo-50', text: 'text-indigo-700', label: 'Certificación' },
     docencia: { color: 'from-teal-500 to-cyan-600', bg: 'bg-teal-50', text: 'text-teal-700', label: 'Docencia' },
-    estudios: { color: 'from-amber-500 to-orange-600', bg: 'bg-amber-50', text: 'text-amber-700', label: 'Estudios' } // Nueva configuración para Estudios
+    estudios: { color: 'from-amber-500 to-orange-600', bg: 'bg-amber-50', text: 'text-amber-700', label: 'Estudios' }
   };
 
   const filterTypes = [
@@ -25,11 +25,13 @@ const Timeline = () => {
     ...Object.entries(typeConfig).map(([key, config]) => ({ key, label: config.label }))
   ];
 
-  const filteredData = selectedType === 'all' 
-    ? timelineData // Incluye todos los tipos, incluidos 'estudios'
-    : selectedType === 'docencia' // Maneja el filtro de docencia
+  // Filtrar y ordenar datos por año (más reciente primero)
+  const filteredData = (selectedType === 'all' 
+    ? timelineData 
+    : selectedType === 'docencia' 
       ? timelineData.filter(item => item.tags && item.tags.includes('Docencia'))
-      : timelineData.filter(item => item.type === selectedType);
+      : timelineData.filter(item => item.type === selectedType)
+  ).sort((a, b) => b.year - a.year); // Ordenar por año descendente
 
   const toggleExpanded = (id) => {
     setExpandedItem(expandedItem === id ? null : id);
@@ -89,11 +91,9 @@ const Timeline = () => {
 
             <AnimatePresence mode="popLayout">
               {filteredData.map((item, index) => {
-                // Asegúrate de que config exista antes de usarlo
                 const config = typeConfig[item.type] || { color: 'from-gray-400 to-gray-500', bg: 'bg-gray-50', text: 'text-gray-700', label: 'Desconocido' };
-                // Si el tipo seleccionado es 'docencia', usa la configuración de docencia
                 if (selectedType === 'docencia' && item.tags && item.tags.includes('Docencia')) {
-                  Object.assign(config, typeConfig.docencia); // Asigna las propiedades de docencia
+                  Object.assign(config, typeConfig.docencia);
                 }
                 const isExpanded = expandedItem === item.id;
 
@@ -180,8 +180,21 @@ const Timeline = () => {
                           >
                             <div className="p-6 space-y-6">
                               {/* Description */}
-                              <div className="prose prose-sm max-w-none">
-                                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                              <div className="prose prose-sm max-w-none prose-headings:text-gray-900 prose-h1:text-xl prose-h2:text-lg prose-h3:text-base prose-p:text-gray-700 prose-ul:text-gray-700 prose-li:text-gray-700 prose-strong:text-gray-900">
+                                <ReactMarkdown 
+                                  remarkPlugins={[remarkGfm]}
+                                  components={{
+                                    h1: ({node, ...props}) => <h1 className="text-xl font-bold text-gray-900 mb-3" {...props} />,
+                                    h2: ({node, ...props}) => <h2 className="text-lg font-bold text-gray-900 mb-2 mt-4" {...props} />,
+                                    h3: ({node, ...props}) => <h3 className="text-base font-semibold text-gray-800 mb-2 mt-3" {...props} />,
+                                    p: ({node, ...props}) => <p className="text-gray-700 mb-2" {...props} />,
+                                    ul: ({node, ...props}) => <ul className="list-disc list-inside text-gray-700 mb-3 space-y-1" {...props} />,
+                                    ol: ({node, ...props}) => <ol className="list-decimal list-inside text-gray-700 mb-3 space-y-1" {...props} />,
+                                    li: ({node, ...props}) => <li className="text-gray-700" {...props} />,
+                                    strong: ({node, ...props}) => <strong className="font-semibold text-gray-900" {...props} />,
+                                    em: ({node, ...props}) => <em className="italic text-gray-700" {...props} />
+                                  }}
+                                >
                                   {item.description}
                                 </ReactMarkdown>
                               </div>

@@ -434,7 +434,38 @@ Programa intensivo de formación en técnicas ofensivas de ciberseguridad, pente
       "Desarrollo de exploits personalizados"
     ],
     tags: ["Pentesting", "Hacking Ético", "Vulnerabilidades", "Exploits"]
+  },
+  {
+    id: 20,
+    year: 2024,
+    title: "Hands On Development – Erasmus+ KA2",
+    company: "Consorcio KA220‑YOU",
+    type: "colaboracion_europea",
+    description: `## Hands On Development – Erasmus+ KA2
+
+Proyecto de colaboración europea iniciado en abril de 2024 con finalización prevista en noviembre de 2025. Bajo la modalidad **KA220‑YOU (Juventud)**, este proyecto tiene como objetivo empoderar a jóvenes y organizaciones juveniles mediante acciones de participación cívica y desarrollo sostenible alineado con los Objetivos de Desarrollo Sostenible (ODS) de la ONU.
+
+### Objetivos principales
+- Fomentar el compromiso juvenil en acciones de desarrollo comunitario
+- Crear herramientas formativas innovadoras no formales
+- Fortalecer capacidades de jóvenes trabajadores sociales en toda Europa
+- Promover iniciativas lideradas por jóvenes y compromiso político comunitario
+- Elevar la conciencia sobre los ODS entre la juventud europea
+
+### Actividades destacadas
+- Investigación y planificación de hitos y entrenamientos piloto
+- Reuniones presenciales y virtuales entre socios de distintos países
+- Sesiones de formación no formal y talleres comunitarios participativos`,
+
+    achievements: [
+      "Participación en la primera reunión transnacional en Roma con seis organizaciones socias",
+      "Diseño de un módulo formativo piloto sobre ciudadanía activa",
+      "Implementación de talleres no formales en múltiples países europeos"
+    ],
+
+    tags: ["Erasmus+ KA2", "Juventud", "ODS", "Capacitación", "Innovación"]
   }
+
 ];
 
 export const skillsDataBckp = [

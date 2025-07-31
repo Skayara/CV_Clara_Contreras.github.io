@@ -6,7 +6,6 @@ import Timeline from './components/Timeline';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Studies from './components/Studies'; // Importa el nuevo componente Studies
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('inicio');
@@ -109,10 +108,6 @@ const App = () => {
 
           <section id="timeline">
             <Timeline />
-          </section>
-
-          <section id="estudios">
-            <Studies />
           </section>
 
           <section id="habilidades">

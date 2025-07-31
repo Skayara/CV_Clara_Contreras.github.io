@@ -16,7 +16,8 @@ const Timeline = () => {
     colaboracion_europea: { color: 'from-yellow-500 to-orange-500', bg: 'bg-yellow-50', text: 'text-yellow-700', label: 'Europa' },
     congreso: { color: 'from-red-500 to-pink-500', bg: 'bg-red-50', text: 'text-red-700', label: 'Congresos' },
     certificacion: { color: 'from-indigo-500 to-violet-600', bg: 'bg-indigo-50', text: 'text-indigo-700', label: 'Certificación' },
-    docencia: { color: 'from-teal-500 to-cyan-600', bg: 'bg-teal-50', text: 'text-teal-700', label: 'Docencia' } // Nueva configuración para Docencia
+    docencia: { color: 'from-teal-500 to-cyan-600', bg: 'bg-teal-50', text: 'text-teal-700', label: 'Docencia' },
+    estudios: { color: 'from-amber-500 to-orange-600', bg: 'bg-amber-50', text: 'text-amber-700', label: 'Estudios' } // Nueva configuración para Estudios
   };
 
   const filterTypes = [
@@ -25,7 +26,7 @@ const Timeline = () => {
   ];
 
   const filteredData = selectedType === 'all' 
-    ? timelineData.filter(item => item.type !== 'estudios') // Excluye 'estudios' de 'Todos'
+    ? timelineData // Incluye todos los tipos, incluidos 'estudios'
     : selectedType === 'docencia' // Maneja el filtro de docencia
       ? timelineData.filter(item => item.tags && item.tags.includes('Docencia'))
       : timelineData.filter(item => item.type === selectedType);

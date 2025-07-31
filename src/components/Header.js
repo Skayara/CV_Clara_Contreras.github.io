@@ -9,7 +9,6 @@ const Header = ({ activeSection, onSectionChange }) => {
   const navItems = [
     { id: 'inicio', label: 'Inicio' },
     { id: 'timeline', label: 'Mi Trayectoria' },
-    { id: 'estudios', label: 'Estudios' }, // Nueva sección de estudios
     { id: 'habilidades', label: 'Habilidades' },
     { id: 'contacto', label: 'Contacto' }
   ];

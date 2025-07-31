@@ -12,7 +12,7 @@ const Hero = () => {
 
   const stats = [
     { label: "Años de Experiencia", value: "5+" },
-    { label: "Proyectos Completados", value: "50+" },
+    { label: "Proyectos Completados", value: "10+" },
     { label: "Tecnologías Dominadas", value: "20+" },
     { label: "Certificaciones", value: "8" }
   ];

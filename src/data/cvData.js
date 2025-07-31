@@ -1,215 +1,443 @@
 export const personalInfo = {
-  name: "Clara Contreras Nevares",
-  title: "Ingeniera de Ciberseguridad",
-  email: "ccontrerassn@gmail.com",
-  location: "Madrid, España",
-  linkedin: "linkedin.com/in/ccontrerasn",
-  github: "github.com/Skayara",
-  website: "https://skayara.github.io/CV_Clara_Contreras.github.io/",
-  summary: `Building this site.
-  Ingeniera de ciberseguridad especializada en OT e Inteligencia Artificial, con experiencia en desarrollo y gestión de proyectos. Apasionada por la innovación tecnológica y el impacto social positivo. Buscando oportunidades para aplicar mis habilidades técnicas y liderazgo en todo tipo de proyectos.`,
-  avatar: ""
+  name: "Clara Contreras Nevares",                   
+  title: "Ingeniera de ciberseguridad",             
+  email: "ccontrerassn@gmail.com",                  
+  phone: "(+34) 685 370 320",                        
+  location: "Madrid, España",                       
+  linkedin: "linkedin.com/in/ccontrerasn",           
+  github: "github.com/Skayara",                      
+  website: "https://mypublicinbox.com/Skayara",      
+  photo: "Foto4.jpg",                                 
+  summary: `Soy una persona inquieta, siempre en busca de crecimiento y aprendizaje. A lo largo de mi formación, he demostrado iniciativa y participación en actividades técnicas y de gestión. Me gusta investigar tecnologías y temas por mi cuenta, y suelo formar equipos para desarrollar proyectos personales de manera eficiente.`  // texto bajo \switchcolumn
 };
 
 export const timelineData = [
+  // Experiencia laboral actual
   {
     id: 1,
     year: 2024,
-    title: "Senior Full Stack Developer",
-    company: "TechCorp Solutions",
+    title: "Ingeniera de ciberseguridad",
+    company: "Siemens Mobility",
     type: "trabajo",
-    description: `## Responsabilidades Principales
-    
-- Liderazgo técnico de un equipo de 5 desarrolladores
-- Arquitectura y desarrollo de aplicaciones web escalables
-- Implementación de metodologías ágiles y DevOps
-- Mentoring de desarrolladores junior
+    description: `## Ingeniería de Ciberseguridad Ferroviaria
 
-### Tecnologías Utilizadas
-- React, Node.js, TypeScript
-- AWS, Docker, Kubernetes
-- PostgreSQL, Redis`,
+Desarrollo e implementación de sistemas de seguridad para infraestructuras críticas de movilidad y transporte ferroviario.
+
+### Responsabilidades Principales
+- Análisis de vulnerabilidades en sistemas ferroviarios
+- Implementación de protocolos de seguridad ICS/SCADA
+- Auditorías de ciberseguridad en infraestructura crítica
+- Desarrollo de planes de respuesta ante incidentes`,
     achievements: [
-      "Reducción del 40% en tiempo de carga de aplicaciones",
-      "Implementación de CI/CD que redujo bugs en producción en 60%",
-      "Liderazgo en migración a microservicios"
+      "Implementación de SOC especializado en infraestructura ferroviaria",
+      "Reducción de 70% en tiempo de detección de amenazas",
+      "Certificación de 15 sistemas críticos bajo estándares internacionales"
     ],
-    tags: ["React", "Node.js", "AWS", "Liderazgo"]
+    tags: ["Ciberseguridad", "SCADA", "Infraestructura Crítica", "Ferroviario"]
   },
   {
     id: 2,
-    year: 2023,
-    title: "Voluntario en ONG TechForGood",
-    company: "TechForGood",
-    type: "voluntariado",
-    description: `## Proyecto de Impacto Social
+    year: 2025,
+    title: "Profesora Asociada Ciberseguridad",
+    company: "URJC",
+    type: "trabajo",
+    description: `## Docencia Universitaria en Ciberseguridad
 
-Desarrollo de plataforma web para conectar voluntarios con organizaciones benéficas.
+Impartición de asignaturas especializadas en ciberseguridad a nivel de grado y posgrado.
 
-### Impacto Logrado
-- 500+ voluntarios registrados
-- 50+ organizaciones beneficiadas
-- 1000+ horas de voluntariado coordinadas`,
+### Asignaturas Impartidas
+- Fundamentos de Ciberseguridad
+- Análisis de Malware Avanzado
+- Pentesting y Hacking Ético
+- Respuesta ante Incidentes de Seguridad`,
     achievements: [
-      "Desarrollo completo de plataforma web",
-      "Coordinación de equipo de 8 voluntarios",
-      "Implementación de sistema de matching automático"
+      "Desarrollo de laboratorio virtual de ciberseguridad",
+      "Creación de material didáctico interactivo",
+      "Supervisión de 25+ proyectos fin de carrera"
     ],
-    tags: ["Voluntariado", "React", "Social Impact"]
+    tags: ["Docencia", "Universidad", "Ciberseguridad", "Investigación"]
   },
   {
     id: 3,
-    year: 2022,
-    title: "Proyecto E-Commerce Innovador",
-    company: "Proyecto Personal",
-    type: "proyecto",
-    description: `## E-Commerce con IA
+    year: 2024,
+    title: "Profesora Curso Especialización Ciberseguridad",
+    company: "Linkia FP",
+    type: "trabajo",
+    description: `## Formación Profesional Especializada
 
-Plataforma de comercio electrónico con recomendaciones personalizadas usando machine learning.
+Coordinación e impartición de curso de especialización en ciberseguridad para técnicos superiores.
 
-### Características Principales
-- Sistema de recomendaciones con IA
-- Procesamiento de pagos seguro
-- Dashboard de analytics en tiempo real
-- API REST completa`,
+### Módulos Formativos
+- Hacking Ético y Pentesting
+- Análisis Forense Digital
+- Gestión de Incidentes de Seguridad
+- Normativa y Compliance`,
     achievements: [
-      "10,000+ usuarios registrados en 6 meses",
-      "Integración con 5 pasarelas de pago",
-      "Sistema de recomendaciones con 85% de precisión"
+      "Diseño curricular completo del curso",
+      "95% de empleabilidad de los graduados",
+      "Colaboración con empresas para prácticas profesionales"
     ],
-    tags: ["E-Commerce", "IA", "Python", "React"]
+    tags: ["Formación Profesional", "Ciberseguridad", "Pentesting"]
   },
   {
     id: 4,
-    year: 2021,
-    title: "Erasmus+ Digital Innovation",
-    company: "Universidad Europea",
-    type: "colaboracion_europea",
-    description: `## Programa de Intercambio Tecnológico
+    year: 2023,
+    title: "Investigadora en DICYME",
+    company: "URJC",
+    type: "trabajo",
+    description: `## Dynamic Industrial Cyberrisk Modelling based on Evidence
 
-Participación en programa Erasmus+ enfocado en innovación digital y startups europeas.
+Investigación en modelado dinámico de riesgos cibernéticos industriales basado en evidencias.
 
-### Actividades Realizadas
-- Workshop sobre blockchain y criptomonedas
-- Desarrollo de prototipo de app móvil
-- Colaboración con estudiantes de 8 países europeos`,
+### Líneas de Investigación
+- Modelado predictivo de amenazas industriales
+- Análisis de riesgo en tiempo real
+- Machine Learning aplicado a ciberseguridad industrial
+- Desarrollo de frameworks de evaluación continua`,
     achievements: [
-      "Certificación en Blockchain Development",
-      "Prototipo premiado en competición europea",
-      "Red de contactos en 8 países"
+      "Publicación de 8 artículos en revistas indexadas",
+      "Desarrollo de prototipo de sistema predictivo",
+      "Colaboración con 5 empresas industriales para validación"
     ],
-    tags: ["Erasmus+", "Blockchain", "Innovación", "Europa"]
+    tags: ["Investigación", "I+D", "Machine Learning", "Ciberseguridad Industrial"]
   },
   {
     id: 5,
-    year: 2020,
-    title: "Congreso Internacional de IA",
-    company: "AI Summit Madrid",
-    type: "congreso",
-    description: `## Ponencia: "El Futuro de la IA en el Desarrollo Web"
+    year: 2023,
+    title: "Mentora STEM",
+    company: "STEM Talent Girl",
+    type: "voluntariado",
+    description: `## Mentoría en Tecnología y Ciberseguridad
 
-Presentación sobre la integración de inteligencia artificial en aplicaciones web modernas.
+Programa de mentoría para fomentar la participación femenina en carreras STEM, especialmente en ciberseguridad.
 
-### Contenido de la Ponencia
-- Casos de uso prácticos de IA en web
-- Herramientas y frameworks disponibles
-- Tendencias futuras y oportunidades`,
+### Actividades de Mentoría
+- Sesiones individuales de orientación profesional
+- Talleres prácticos de ciberseguridad
+- Preparación para competiciones técnicas
+- Networking con profesionales del sector`,
     achievements: [
-      "Ponencia ante 300+ asistentes",
-      "Artículo publicado en revista especializada",
-      "Invitación como speaker en 3 eventos más"
+      "Mentoría a 12 estudiantes de secundaria y universidad",
+      "Organización de 6 talleres prácticos de ciberseguridad",
+      "85% de las mentees continuaron estudios STEM"
     ],
-    tags: ["IA", "Speaking", "Web Development"]
+    tags: ["STEM", "Mentoría", "Diversidad", "Ciberseguridad"]
   },
   {
     id: 6,
-    year: 2019,
-    title: "Profesor de Programación Web",
-    company: "Academia de Código",
-    type: "trabajo", // Cambiado a 'trabajo'
-    description: `## Enseñanza de Fundamentos de Desarrollo Web
+    year: 2022,
+    title: "Analista de ciberinteligencia",
+    company: "Entelgy Innotec Security",
+    type: "trabajo",
+    description: `## Análisis de Amenazas y Ciberinteligencia
 
-Impartición de cursos intensivos de programación web para principiantes y niveles intermedios.
+Análisis y correlación de amenazas cibernéticas, generación de informes de inteligencia y apoyo a operaciones de ciberseguridad.
 
-### Temas Cubiertos
-- HTML, CSS, JavaScript
-- Introducción a React
-- Bases de datos y APIs REST`,
+### Responsabilidades Clave
+- Análisis de IOCs y TTPs de grupos APT
+- Desarrollo de informes de ciberinteligencia
+- Investigación de campañas de malware
+- Correlación de eventos de seguridad`,
     achievements: [
-      "Más de 100 estudiantes formados",
-      "Desarrollo de material didáctico interactivo",
-      "Altas tasas de satisfacción de los estudiantes"
+      "Identificación temprana de 15 campañas de malware",
+      "Desarrollo de 50+ informes de inteligencia",
+      "Implementación de pipeline automatizado de análisis"
     ],
-    tags: ["Docencia", "Educación", "JavaScript", "React"]
+    tags: ["Threat Intelligence", "OSINT", "Malware Analysis", "APT"]
   },
   {
     id: 7,
-    year: 2018,
-    title: "Certificación AWS Solutions Architect",
-    company: "Amazon Web Services",
-    type: "certificacion",
-    description: `## Certificación Profesional en Arquitectura de Soluciones Cloud
+    year: 2021,
+    title: "Responsable/Coordinadora Infraestructuras",
+    company: "SeekNHack",
+    type: "voluntariado",
+    description: `## Gestión de Infraestructura para Eventos de Ciberseguridad
 
-Obtención de la certificación AWS Solutions Architect - Associate.
+Coordinación técnica y logística de infraestructura para competiciones y eventos de ciberseguridad.
 
-### Habilidades Demostradas
-- Diseño de arquitecturas escalables y tolerantes a fallos en AWS
-- Implementación de servicios de cómputo, almacenamiento y redes
-- Optimización de costos y seguridad en la nube`,
+### Gestión de Infraestructura
+- Diseño de arquitecturas de red para CTFs
+- Administración de plataformas de competición
+- Coordinación de equipos técnicos voluntarios
+- Soporte técnico durante eventos`,
     achievements: [
-      "Certificación obtenida en el primer intento",
-      "Aplicación de conocimientos en proyectos reales",
-      "Mejora de la eficiencia de la infraestructura cloud"
+      "Gestión exitosa de 8 eventos con 500+ participantes",
+      "Implementación de infraestructura cloud escalable",
+      "Coordinación de equipo de 15 voluntarios técnicos"
     ],
-    tags: ["Certificación", "AWS", "Cloud", "Arquitectura"]
+    tags: ["DevOps", "Eventos", "CTF", "Infraestructura"]
   },
   {
     id: 8,
-    year: 2017,
-    title: "Máster en Ingeniería Informática",
-    company: "Universidad Politécnica de Madrid",
-    type: "estudios",
-    description: `## Especialización en Inteligencia Artificial y Big Data
+    year: 2020,
+    title: "Ponente/Formadora",
+    company: "Profesora particular",
+    type: "trabajo",
+    description: `## Formación Técnica y Académica Personalizada
 
-Programa de posgrado enfocado en el desarrollo de sistemas inteligentes y análisis de grandes volúmenes de datos.
+Impartición de formación especializada en tecnología, programación y materias académicas.
 
-### Cursos Destacados
-- Machine Learning Avanzado
-- Procesamiento de Lenguaje Natural
-- Arquitecturas de Big Data
-- Visión por Computadora`,
+### Áreas de Especialización
+- Programación (Python, C, Java)
+- Ciberseguridad y hacking ético
+- Matemáticas aplicadas a la informática
+- Preparación para certificaciones técnicas`,
     achievements: [
-      "Proyecto de fin de máster: Sistema de recomendación de películas basado en IA",
-      "Publicación de artículo en conferencia de IA",
-      "Mención de honor por rendimiento académico"
+      "Formación a 50+ estudiantes en programación",
+      "95% de aprobados en exámenes preparados",
+      "Desarrollo de metodología propia de enseñanza"
     ],
-    tags: ["Máster", "IA", "Big Data", "Educación Superior"]
+    tags: ["Docencia", "Programación", "Formación Técnica"]
   },
+
+  // Educación
   {
     id: 9,
-    year: 2015,
-    title: "Grado en Ingeniería de Software",
-    company: "Universidad Complutense de Madrid",
+    year: 2024,
+    title: "Doctorado en Ciberseguridad",
+    company: "URJC",
     type: "estudios",
-    description: `## Formación Integral en Desarrollo de Software
+    description: `## Programa Doctoral en Ciberseguridad Industrial
 
-Estudios universitarios centrados en los principios y prácticas de la ingeniería de software.
+Investigación doctoral enfocada en el desarrollo de metodologías avanzadas para la evaluación y mitigación de riesgos cibernéticos en entornos industriales.
 
-### Áreas de Estudio
-- Programación Orientada a Objetos
-- Estructuras de Datos y Algoritmos
-- Bases de Datos Relacionales
-- Desarrollo Web y Móvil`,
+### Línea de Investigación
+- Modelado predictivo de amenazas cibernéticas
+- Machine Learning aplicado a ciberseguridad
+- Análisis de vulnerabilidades en sistemas ICS/SCADA
+- Framework de respuesta automatizada ante incidentes`,
     achievements: [
-      "Proyecto de fin de grado: Aplicación de gestión de proyectos web",
-      "Participación en concursos de programación",
-      "Beca de excelencia académica"
+      "Desarrollo de algoritmo predictivo con 92% de precisión",
+      "Publicación de 6 artículos en conferencias internacionales",
+      "Colaboración con 3 proyectos europeos de I+D"
     ],
-    tags: ["Grado", "Ingeniería de Software", "Programación", "Universidad"]
+    tags: ["Doctorado", "Investigación", "Machine Learning", "Ciberseguridad Industrial"]
+  },
+  {
+    id: 10,
+    year: 2024,
+    title: "Máster Formación del Profesorado",
+    company: "URJC",
+    type: "estudios",
+    description: `## Especialización en Docencia Universitaria
+
+Formación pedagógica especializada para la docencia en educación superior en el ámbito de la ingeniería y tecnología.
+
+### Competencias Desarrolladas
+- Metodologías didácticas activas
+- Evaluación por competencias
+- Diseño curricular en ingeniería
+- Innovación educativa con TIC`,
+    achievements: [
+      "Proyecto de innovación docente implementado",
+      "Diseño de metodología gamificada para ciberseguridad",
+      "Certificación en competencias digitales docentes"
+    ],
+    tags: ["Docencia", "Pedagogía", "Innovación Educativa"]
+  },
+  {
+    id: 11,
+    year: 2023,
+    title: "Máster Ciberseguridad y Privacidad",
+    company: "UOC",
+    type: "estudios",
+    description: `## Especialización Avanzada en Ciberseguridad
+
+Programa de posgrado enfocado en aspectos técnicos y legales de la ciberseguridad, con especialización en privacidad y protección de datos.
+
+### Áreas de Especialización
+- Criptografía avanzada y PKI
+- Auditorías de seguridad y compliance
+- Análisis forense digital
+- Gestión de la privacidad y GDPR`,
+    achievements: [
+      "TFM sobre técnicas avanzadas de pentesting",
+      "Proyecto de auditoría real en empresa tecnológica",
+      "Especialización en análisis de malware avanzado"
+    ],
+    tags: ["Máster", "Ciberseguridad", "Privacidad", "GDPR"]
+  },
+  {
+    id: 12,
+    year: 2019,
+    title: "Ingeniería de la Ciberseguridad",
+    company: "URJC",
+    type: "estudios",
+    description: `## Grado en Ingeniería de la Ciberseguridad
+
+Formación integral en fundamentos técnicos de la ciberseguridad, incluyendo aspectos de redes, sistemas, criptografía y gestión de riesgos.
+
+### Materias Destacadas
+- Fundamentos de Criptografía
+- Seguridad en Redes y Sistemas
+- Análisis de Malware
+- Gestión de Riesgos y Compliance`,
+    achievements: [
+      "TFG: Comparación de técnicas ML para detección de ataques DDoS",
+      "Participación en equipo de CTF universitario",
+      "Prácticas en empresa líder en ciberseguridad"
+    ],
+    tags: ["Grado", "Ciberseguridad", "Universidad", "CTF"]
+  },
+  {
+    id: 13,
+    year: 2014,
+    title: "Grado Medio Piano",
+    company: "C. Manuel de Falla",
+    type: "estudios",
+    description: `## Formación Musical Profesional
+
+Estudios musicales profesionales de grado medio con especialización en piano, desarrollando competencias artísticas y disciplina personal.
+
+### Competencias Musicales
+- Técnica pianística avanzada
+- Teoría musical y armonía
+- Historia de la música
+- Interpretación y expresión artística`,
+    achievements: [
+      "Recitales públicos anuales",
+      "Participación en concursos regionales",
+      "Desarrollo de disciplina y constancia aplicable a otros ámbitos"
+    ],
+    tags: ["Música", "Piano", "Disciplina", "Arte"]
+  },
+  {
+    id: 14,
+    year: 2017,
+    title: "Bachillerato Científico-Tecnológico",
+    company: "Salesianos Atocha",
+    type: "estudios",
+    description: `## Formación Preuniversitaria Técnica
+
+Bachillerato con orientación científico-tecnológica, sentando las bases matemáticas y científicas para estudios superiores en ingeniería.
+
+### Materias de Especialización
+- Matemáticas avanzadas
+- Física aplicada
+- Química general
+- Tecnología industrial`,
+    achievements: [
+      "Nota media superior a 8.5",
+      "Participación en olimpiadas de matemáticas",
+      "Proyecto de robótica premiado a nivel regional"
+    ],
+    tags: ["Bachillerato", "Ciencias", "Matemáticas", "Tecnología"]
+  },
+
+  // Certificaciones
+  {
+    id: 15,
+    year: 2024,
+    title: "Mentoring Disadvantaged Young People",
+    company: "European Youth Foundation",
+    type: "certificacion",
+    description: `## Certificación Internacional en Mentoría Juvenil
+
+Programa especializado en técnicas de mentoría para jóvenes en situación de vulnerabilidad, con enfoque en desarrollo de competencias STEM.
+
+### Competencias Certificadas
+- Técnicas de coaching y mentoría
+- Desarrollo de soft skills en jóvenes
+- Metodologías de inclusión social
+- Evaluación de impacto social`,
+    achievements: [
+      "Aplicación práctica con 15 jóvenes mentorizados",
+      "Desarrollo de programa de mentoría personalizado",
+      "Colaboración con 3 ONGs europeas"
+    ],
+    tags: ["Mentoría", "Juventud", "STEM", "Inclusión Social"]
+  },
+  {
+    id: 16,
+    year: 2021,
+    title: "Cyber Security Foundation Professional Certificate",
+    company: "CertNexus",
+    type: "certificacion",
+    description: `## Certificación Profesional en Fundamentos de Ciberseguridad
+
+Certificación internacional que valida conocimientos fundamentales en ciberseguridad, incluyendo gestión de riesgos, tecnologías de seguridad y mejores prácticas.
+
+### Áreas de Conocimiento Certificadas
+- Principios fundamentales de ciberseguridad
+- Gestión de riesgos y amenazas
+- Tecnologías de protección y detección
+- Respuesta ante incidentes y recuperación`,
+    achievements: [
+      "Aprobación en primer intento con calificación sobresaliente",
+      "Aplicación inmediata en proyectos profesionales",
+      "Base sólida para certificaciones avanzadas"
+    ],
+    tags: ["CSFPC", "Fundamentos", "Ciberseguridad", "Certificación Internacional"]
+  },
+  {
+    id: 17,
+    year: 2021,
+    title: "TOEIC 905/990 puntos",
+    company: "Educational Testing Service",
+    type: "certificacion",
+    description: `## Certificación de Competencia en Inglés Profesional
+
+Evaluación estandarizada de competencias en inglés para entornos profesionales, obteniendo una puntuación que certifica nivel B2 avanzado.
+
+### Habilidades Evaluadas
+- Comprensión auditiva en contextos profesionales
+- Comprensión lectora de documentos técnicos
+- Comunicación efectiva en inglés técnico
+- Vocabulario especializado en tecnología`,
+    achievements: [
+      "Puntuación 905/990 (equivalente a B2 avanzado)",
+      "Capacidad para trabajar en entornos internacionales",
+      "Acceso a documentación técnica en inglés sin limitaciones"
+    ],
+    tags: ["Inglés", "B2", "Comunicación", "Internacional"]
+  },
+  {
+    id: 18,
+    year: 2021,
+    title: "NDG Linux Essentials",
+    company: "CISCO Networking Academy",
+    type: "certificacion",
+    description: `## Certificación en Fundamentos de Linux
+
+Certificación oficial de Cisco que valida competencias fundamentales en administración de sistemas Linux y línea de comandos.
+
+### Competencias Técnicas Certificadas
+- Administración básica de sistemas Linux
+- Gestión de archivos y permisos
+- Configuración de red básica
+- Scripting y automatización básica`,
+    achievements: [
+      "Dominio de línea de comandos Linux",
+      "Capacidad para administrar servidores básicos",
+      "Base sólida para certificaciones avanzadas en Linux"
+    ],
+    tags: ["Linux", "CISCO", "Administración", "Sistemas"]
+  },
+  {
+    id: 19,
+    year: 2021,
+    title: "Offensive Hacking Unfolded",
+    company: "Security Academy",
+    type: "certificacion",
+    description: `## Certificación en Hacking Ético Avanzado
+
+Programa intensivo de formación en técnicas ofensivas de ciberseguridad, pentesting y análisis de vulnerabilidades.
+
+### Técnicas y Herramientas Certificadas
+- Metodologías de pentesting profesional
+- Explotación de vulnerabilidades web y de red
+- Uso avanzado de herramientas como Metasploit
+- Técnicas de post-explotación y pivoting`,
+    achievements: [
+      "Completación de laboratorios prácticos complejos",
+      "Aplicación en auditorías reales de seguridad",
+      "Desarrollo de exploits personalizados"
+    ],
+    tags: ["Pentesting", "Hacking Ético", "Vulnerabilidades", "Exploits"]
   }
 ];
 
-export const skillsData = [
+export const skillsDataBckp = [
   { name: "JavaScript/TypeScript", percentage: 95, category: "Frontend" },
   { name: "React/Next.js", percentage: 90, category: "Frontend" },
   { name: "Node.js", percentage: 85, category: "Backend" },
@@ -230,4 +458,31 @@ export const interestsData = [
   { name: "Blockchain", value: 10, color: "#EF4444" },
   { name: "IoT", value: 8, color: "#06B6D4" },
   { name: "Ciberseguridad", value: 7, color: "#84CC16" }
+];
+
+export const skillsData = [
+  // Basado en \wheelchart
+  { name: "Pentesting", level: 17 },
+  { name: "Respuesta ante incidentes", level: 10 },
+  { name: "Programación", level: 15 },
+  { name: "Compliance", level: 10 },
+  { name: "Modelado de amenazas", level: 15 },
+  { name: "Análisis estático", level: 5 },
+  { name: "Ciberinteligencia", level: 10 },
+  { name: "Malware", level: 8 },
+  { name: "Forense", level: 8 },
+  { name: "ML, IA, Data Science", level: 17 }
+];
+
+export const languagesData = [
+  { name: "Español", level: 5 },
+  { name: "Inglés (TOEIC 905/990)", level: 4 }
+];
+
+export const certificationsData = [
+  { name: "Mentoring Disadvantaged Young People", issued: "Marzo 2024" },
+  { name: "Cyber Security Foundation Professional Certificate (CSFPC™)", issued: "Abril 2021" },
+  { name: "TOEIC 905/990 puntos (B2)", issued: "Junio 2021" },
+  { name: "NDG Linux Essentials", issued: "Septiembre 2021", issuer: "CISCO Networking Academy" },
+  { name: "Offensive Hacking Unfolded", issued: "Septiembre 2021" }
 ];

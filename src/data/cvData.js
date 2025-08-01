@@ -7,8 +7,8 @@ export const personalInfo = {
   linkedin: "linkedin.com/in/ccontrerasn",           
   github: "github.com/Skayara",                      
   website: "https://mypublicinbox.com/Skayara",
-  photo: "/images/Foto4.jpg", 
-  avatar: "/images/Foto4.jpg",                               
+  photo: `${process.env.PUBLIC_URL || ''}/images/Foto4.jpg`,
+  avatar: `${process.env.PUBLIC_URL || ''}/images/Foto4.jpg`,
   summary: `Soy una persona inquieta, siempre en busca de crecimiento y aprendizaje. A lo largo de mi formación, he demostrado iniciativa y participación en actividades técnicas y de gestión. Me gusta investigar tecnologías y temas por mi cuenta, y suelo formar equipos para desarrollar proyectos personales de manera eficiente.`  // texto bajo \switchcolumn
 };
 

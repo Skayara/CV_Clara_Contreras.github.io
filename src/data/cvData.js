@@ -45,19 +45,25 @@ tags: ["Ciberseguridad", "SCADA", "Infraestructura Crítica", "Ferroviario", "IE
     type: "trabajo",
     description: `## Docencia Universitaria en Ciberseguridad
 
-Impartición de asignaturas especializadas en ciberseguridad a nivel de grado y posgrado.
-
-### Asignaturas Impartidas
-- Fundamentos de Ciberseguridad
-- Análisis de Malware Avanzado
-- Pentesting y Hacking Ético
-- Respuesta ante Incidentes de Seguridad`,
+    Profesora asociada en la Universidad Rey Juan Carlos, responsable del diseño e impartición de asignaturas de ciberseguridad, incluyendo actualización de contenidos teóricos y prácticos según los planes oficiales del Ministerio.
+    
+    ### Asignaturas Impartidas
+    - Malware y Amenazas Dirigidas
+    - Inteligencia de la Seguridad
+    - Seguridad Informática
+    
+    ### Responsabilidades Principales
+    - Diseño de planes formativos, temarios y laboratorios virtuales de ciberseguridad para asignaturas especializadas.
+    - Impartición de clases en Fundamentos de Ciberseguridad, Análisis de Malware e Inteligencia de la Seguridad.
+    - Dirección de Trabajos Fin de Grado (TFG) y asesoría académica a estudiantes.
+    - Integración de metodologías innovadoras como gamificación para fomentar el aprendizaje práctico.`,
     achievements: [
-      "Desarrollo de laboratorio virtual de ciberseguridad",
-      "Creación de material didáctico interactivo",
-      "Supervisión de 25+ proyectos fin de carrera"
+      "Creación de laboratorios virtuales para análisis de malware y ciberinteligencia",
+      "Actualización de contenidos teórico-prácticos alineados con los nuevos planes de estudio",
+      "Dirección de 12-15 TFGs anuales con alta satisfacción en encuestas docentes"
     ],
-    tags: ["Docencia", "Universidad", "Ciberseguridad", "Investigación"]
+    tags: ["Docencia", "Universidad", "Ciberseguridad", "Malware", "Ciberinteligencia", "Gamificación"]
+
   },
   {
     id: 3,

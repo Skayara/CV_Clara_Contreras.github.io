@@ -249,7 +249,7 @@ Máster oficial en formación del profesorado para la enseñanza de informática
       "Diseño de unidades didácticas y material educativo propio",
       "Habilitación oficial para docencia en secundaria y bachillerato en curso"
     ],
-    tags: ["Pedagogía", "Innovación Educativa", "TIC", "Finalizado"]
+    tags: ["Pedagogía", "Innovación Educativa", "TIC", "En curso"]
   },
   {
     id: 11,

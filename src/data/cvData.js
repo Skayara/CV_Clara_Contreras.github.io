@@ -1088,7 +1088,24 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Desarrollo de retos CTF"
     ],
     tags: ["CTF", "Forense", "Metadatos", "Curso", "Finalizado"]
+  },
+  {
+    id: 56,
+    year: 2025,
+    title: "Prácticas docentes – Formación Profesional en FP Informática",
+    company: "Salesianos Atocha",
+    type: "trabajo",
+    description: `## Prácticas como profesora de Formación Profesional
+
+Realización de prácticas docentes en 2025 en Salesianos Atocha como profesora de formación profesional en áreas de informática y ciberseguridad. Participación en el programa formativo del centro junto a profesionales en activo en el sector de la seguridad informática.`,
+    achievements: [
+      "Impartición de clases y talleres técnicos en ciclos formativos de informática (FP)",
+      "Colaboración con expertos del sector como parte del equipo formador acreditado por Salesianos Atocha",
+      "Apoyo en contenidos de ciberseguridad y prácticas formativas"
+    ],
+    tags: ["Prácticas", "FP", "Ciberseguridad", "Salesianos Atocha", "Finalizado"]
   }
+
 
 
 

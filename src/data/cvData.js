@@ -108,7 +108,7 @@ Investigación aplicada en modelado dinámico de riesgos cibernéticos industria
       "Validación de resultados y transferencia de avances tecnológicos a la empresa colaboradora",
       "Publicación de 1 paper en congreso internacional y envío de 1 artículo a revista científica"
     ],
-    tags: ["Investigación", "I+D", "Machine Learning", "Ciberseguridad Industrial", "OT", "Python", "TensorFlow", "Scikit-learn"]
+    tags: ["Proyecto", "Investigación", "I+D", "Machine Learning", "Ciberseguridad Industrial", "OT", "Python", "TensorFlow", "Scikit-learn"]
 
   },
   {
@@ -175,7 +175,7 @@ Responsable técnica y logística en la organización de eventos y competiciones
       "Implementación de infraestructura cloud estable y escalable para entornos de competición",
       "Coordinación efectiva de equipos técnicos voluntarios"
     ],
-    tags: ["DevOps", "Eventos", "CTF", "Cloud", "Infraestructura", "Coordinación"]
+    tags: ["Proyecto", "DevOps", "Eventos", "CTF", "Cloud", "Infraestructura", "Coordinación"]
 
   },
   {
@@ -485,8 +485,216 @@ Proyecto de colaboración europea iniciado en abril de 2024 con finalización 
       "Implementación de talleres no formales en múltiples países europeos"
     ],
 
-    tags: ["Erasmus+ KA2", "Juventud", "ODS", "Capacitación", "Innovación"]
+    tags: ["Proyecto", "Erasmus+ KA2", "Juventud", "ODS", "Capacitación", "Innovación"]
+  },
+  {
+  id: 21,
+  year: 2020,
+  title: "HackOn 2020 – II Jornadas de Ciberseguridad URJC",
+  company: "URJC",
+  type: "congreso",
+  description: `## HackOn 2020 – II Jornadas de Ciberseguridad URJC
+
+Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la Ciberseguridad de la URJC, celebrado el 6 de febrero de 2020 en el campus de Móstoles. Tuve responsabilidades dentro del equipo de organización técnico-logística, apoyando en la coordinación de talleres y estructura del evento.
+
+### Actividades Principales
+- Staff técnico durante los talleres prácticos (OSINT, CTF, sandbox, análisis de malware).
+- Apoyo en el montaje logístico y supervisión de ponencias y sesiones técnicas.
+- Participación como miembro del equipo organizador en reuniones y planificación del evento.`,
+  achievements: [
+    "Soporte en coordinación y ejecución de talleres técnicos",
+    "Planificación y logística del evento sin ánimo de lucro"
+  ],
+  tags: ["Congreso", "Organización", "Ciberseguridad", "CTF", "HackOn"]
+  },
+  {
+    id: 22,
+    year: 2021,
+    title: "HackOn 2021 – III Jornadas de Ciberseguridad URJC",
+    company: "URJC",
+    type: "congreso",
+    description: `## HackOn 2021 – III Jornadas de Ciberseguridad URJC (edición online)
+
+  Evento organizado por estudiantes del Grado en Ingeniería de la Ciberseguridad de la URJC, celebrado el 18 de febrero de 2021 en formato online. Participé como presentadora en directo de la edición virtual, facilitando la transición digital del evento durante la pandemia.
+
+  ### Actividades principales
+  - Presentación de sesiones y moderación de contenido en directo.
+  - Coordinación con el equipo organizador para la emisión de ponencias, talleres y CTF.
+  - Interacción en tiempo real con la audiencia y moderación de Q&A.`,
+    achievements: [
+      "Actuación como presentadora oficial durante HackOn 2021 en streaming",
+      "Contribución clave en la transición a formato online y coordinación técnica en directo",
+      "Moderación de sesiones y participación con audiencia virtual de más de 200 personas"
+    ],
+    tags: ["Congreso", "Presentación", "Ciberseguridad", "HackOn", "Evento Online"]
+  },
+  {
+    id: 23,
+    year: 2022,
+    title: "HackOn 2022 – IV Jornadas de Ciberseguridad URJC",
+    company: "URJC",
+    type: "congreso",
+    description: `## HackOn 2022 – IV Jornadas de Ciberseguridad URJC
+
+  Edición celebrada el 16 de febrero de 2022 de las jornadas HackOn, organizada por estudiantes del Grado en Ingeniería de la Ciberseguridad de la URJC. 
+
+  ### Actividades Principales
+  - Coordinación general del equipo técnico responsable de la infraestructura, sesiones en directo y actividades educativas.
+  - Soporte de staff técnico y ponentes durante los talleres, charlas y la competición CTF.
+  - Participación activa en reuniones de planificación, diseño de contenidos y ejecución técnica del evento.`,
+    achievements: [
+      "Gestión integral del staff técnico y coordinación del evento HackOn 2022",
+      "Supervisión de infraestructura, talleres y competición CTF",
+      "Creación de retos para el CTF"
+    ],
+    tags: ["Congreso", "Ciberseguridad", "HackOn", "CTF", "Organización"]
+  },
+  {
+    id: 24,
+    year: 2023,
+    title: "HackOn 2023 – V Jornadas de Ciberseguridad URJC",
+    company: "URJC",
+    type: "congreso",
+    description: `## HackOn 2023 – V Jornadas de Ciberseguridad URJC
+
+  Celebrada el 16 de febrero de 2023 en el campus de Móstoles de la URJC, organizada íntegramente por estudiantes del Grado en Ingeniería de la Ciberseguridad. Esta edición combinó ponencias, talleres y competiciones prácticas como CTF, con una estructura híbrida para incluir participantes presenciales y virtuales.
+
+  ### Actividades Principales
+  - Coordinación técnica y logística del staff encargado de talleres, sesiones y competición CTF.
+  - Soporte directo durante las actividades presenciales y virtuales, garantizando la operativa técnica.
+  - Participación en el diseño y planificación general del evento junto al equipo organizador.`,
+    achievements: [
+      "Coordinación de la infraestructura y soporte técnico en talleres y competición CTF para más de 170 asistentes",
+      "Contribución en la planificación técnica y logística del evento"
+    ],
+    tags: ["Congreso", "Ciberseguridad", "HackOn", "CTF", "Organización"]
+  },
+  {
+    id: 25,
+    year: 2024,
+    title: "HackOn 2024 – VI Jornadas de Ciberseguridad URJC",
+    company: "URJC",
+    type: "congreso",
+    description: `## HackOn 2024 – VI Jornadas de Ciberseguridad URJC
+
+  Celebrado el 22 de febrero de 2024 en el campus de Móstoles de la URJC, esta edición fue organizada por estudiantes del Grado en Ingeniería de la Ciberseguridad y combinó ponencias, talleres, sesiones CTF y actividades híbridas, tanto presenciales como online.
+
+  ### Actividades Principales
+  - Soporte técnico y logístico al equipo de nuevos voluntarios durante el evento.  
+  - Coordinación en contacto con empresas, patrocinadores y ponentes para la agenda y organización.  
+  - Acompañamiento durante las sesiones y facilitación de tareas de staff técnico.`,
+    achievements: [
+      "Apoyo y supervisión de nuevos voluntarios durante HackOn 2024",
+      "Gestión de relaciones con ponentes y empresas colaboradoras",
+      "Contribución en la logística técnica de talleres, ponencias y CTF"
+    ],
+    tags: ["Congreso", "Ciberseguridad", "HackOn", "Voluntariado", "Organización"]
+  },
+  {
+    id: 26,
+    year: 2023,
+    title: "Navaja Negra 2023",
+    company: "Navaja Negra Conference",
+    type: "congreso",
+    description: `## Navaja Negra 2023 – XI Congreso de Seguridad Informática
+
+  Celebrado los días 5, 6 y 7 de octubre de 2023 en Albacete (XI edición de Navaja Negra).
+
+  ### Actividades Principales
+  - Soporte durante los tres días del congreso.
+  - Coordinación del equipo técnico para ponencias, talleres y actividades prácticas.
+  - Colaboración en la logística de montaje, supervisión técnica y atención a ponentes y participantes.` ,
+    achievements: [
+      "Miembro del staff en Navaja Negra 2023 en Albacete",
+      "Soporte operativo en talleres, conferencias y sesiones prácticas para más de 800 asistentes",
+      "Apoyo en la logística técnica y coordinación del equipo técnico durante el evento"
+    ],
+    tags: ["Congreso", "Ciberseguridad", "Navaja Negra", "Organización", "Staff Técnico"]
+  },
+  {
+    id: 27,
+    year: 2023,
+    title: "RootedCon 2023",
+    company: "RootedCon",
+    type: "congreso",
+    description: `## HackTricks Track – RootedCon 2023
+
+  Track especializado dentro de RootedCon 2023 enfocado en técnicas avanzadas de hacking, explotación y análisis de vulnerabilidades. Participación como parte del staff técnico responsable de la coordinación de sesiones, soporte y logística del track HackTricks.`,
+
+    achievements: [
+      "Miembro del staff técnico en HackTricks Track durante RootedCon 2023",
+      "Soporte técnico en conferencias y talleres sobre explotación, Pentesting y análisis de vulnerabilidades"
+    ],
+    tags: ["Congreso", "RootedCon", "HackTricks", "Staff Técnico", "Explotación", "Pentesting"]
+  },
+  {
+    id: 28,
+    year: 2024,
+    title: "FEED 2024 – Encuentro del Talento Digital",
+    company: "Encuentro del Talento Digital – FEED",
+    type: "congreso",
+    description: `## FEED 2024 – Encuentro del Talento Digital (Madrid)
+
+  Evento celebrado del 21 al 22 de noviembre en Madrid, organizado por la Feria del Empleo en la Era Digital (FEED). Se trata de un congreso multisala centrado en tecnologías emergentes, talento digital y empleabilidad.
+
+  ### Actividades Principales
+  - Ponencia sobre técnicas avanzadas y usos prácticos de OSINT aplicada a ciberseguridad.
+  - Interacción directa con profesionales del sector y asistentes durante el evento.`,
+    achievements: [
+      "Ponente sobre OSINT en FEED 2024 Madrid",
+      "Presentación técnica dirigida a perfiles en ciberseguridad, reclutamiento y talento digital",
+      "Conexión con profesionales del sector y visibilidad en evento multisala"
+    ],
+    tags: ["Congreso", "OSINT", "TalentDigital", "Ponente", "Ciberseguridad"]
+  },
+  {
+    id: 29,
+    year: 2024,
+    title: "Cursos de Verano URJC – Aranjuez 2024",
+    company: "URJC",
+    type: "congreso",
+    description: `## Ponente en Cursos de Verano URJC – Aranjuez 2024
+
+  Participación como ponente en el curso de verano organizado por la Universidad Rey Juan Carlos en Aranjuez del 24 al 28 de junio de 2024. El enfoque incluía la intersección entre ciberseguridad e inteligencia artificial aplicada.
+
+  ### Actividades Principales
+  - Ponencia sobre técnicas de ataque y vulnerabilidades específicas en modelos de inteligencia artificial.
+  - Participación en sesiones técnicas y mesas de debate sobre IA, seguridad y detección de anomalías.`,
+    achievements: [
+      "Ponente invitada en Curso de Verano URJC Aranjuez 2024 sobre ataques a IA",
+      "Presentación técnica integrada en curso sobre ciberseguridad e IA",
+      "Contribución al debate académico sobre riesgos de IA aplicada a seguridad"
+    ],
+    tags: ["Congreso", "Ciberseguridad", "Inteligencia Artificial", "Cursos de Verano URJC", "OSINT", "Ataques IA"]
+  },
+  {
+    id: 30,
+    year: 2024,
+    title: "XIV Congreso RITSI 2024 – Madrid",
+    company: "RITSI",
+    type: "congreso",
+    description: `## XIV Congreso RITSI 2024 – Estado y Tendencias de la Ingeniería Informática
+
+  Celebrado el 12 de abril de 2024 en la Universidad Rey Juan Carlos (URJC), el XIV Congreso RITSI es el congreso estatal dedicado al sector de la ingeniería informática en España. Esta edición incluyó charlas técnicas, networking con empresas innovadoras y presentaciones de expertos del sector. 
+
+  ### Ponencia Destacada
+  - “**Secretos Ocultos y Marcas Invisibles: El Arte de la Steganografía y el Watermarking**”, explora técnicas avanzadas para ocultar información en medios digitales, proteger la propiedad intelectual y detectar manipulaciones de contenido.`,
+    achievements: [
+      "Ponente en el XIV Congreso RITSI 2024 con charla técnica sobre esteganografía y watermarking",
+      "Divulgación de técnicas avanzadas en comunidad universitaria y profesional"
+    ],
+    tags: ["Congreso", "RITSI", "Esteganografía", "Watermarking", "Ciberseguridad", "Ponente"]
   }
+
+
+
+
+
+
+
+
+
+
 
 ];
 
@@ -504,14 +712,18 @@ export const skillsDataBckp = [
 ];
 
 export const interestsData = [
-  { name: "Desarrollo Web", value: 25, color: "#3B82F6" },
-  { name: "Inteligencia Artificial", value: 20, color: "#8B5CF6" },
-  { name: "DevOps", value: 15, color: "#10B981" },
-  { name: "UI/UX Design", value: 15, color: "#F59E0B" },
-  { name: "Blockchain", value: 10, color: "#EF4444" },
-  { name: "IoT", value: 8, color: "#06B6D4" },
-  { name: "Ciberseguridad", value: 7, color: "#84CC16" }
+  { name: "Compliance", value: 10, color: "#3B82F6" },
+  { name: "Programación", value: 10, color: "#8B5CF6" },
+  { name: "Respuesta ante incidentes", value: 12, color: "#10B981" },
+  { name: "Pentesting", value: 12, color: "#F59E0B" },
+  { name: "ML, IA, Data Science", value: 8, color: "#EF4444" },
+  { name: "Forense", value: 10, color: "#06B6D4" },
+  { name: "Malware", value: 10, color: "#84CC16" },
+  { name: "Ciberinteligencia", value: 10, color: "#EAB308" },
+  { name: "Análisis estático", value: 9, color: "#F472B6" },
+  { name: "Modelado de amenazas", value: 9, color: "#22D3EE" }
 ];
+
 
 export const skillsData = [
   // Basado en \wheelchart

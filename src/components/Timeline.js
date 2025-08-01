@@ -26,11 +26,14 @@ const Timeline = () => {
   ];
 
   // Filtrar y ordenar datos por año (más reciente primero)
-  const filteredData = (selectedType === 'all' 
-    ? timelineData 
-    : selectedType === 'docencia' 
-      ? timelineData.filter(item => item.tags && item.tags.includes('Docencia'))
-      : timelineData.filter(item => item.type === selectedType)
+  const filteredData = (
+    selectedType === 'all'
+      ? timelineData
+      : selectedType === 'docencia'
+        ? timelineData.filter(item => item.tags && item.tags.includes('Docencia'))
+        : selectedType === 'proyecto'
+          ? timelineData.filter(item => item.tags && item.tags.includes('Proyecto'))
+          : timelineData.filter(item => item.type === selectedType)
   ).sort((a, b) => b.year - a.year); // Ordenar por año descendente
 
   const toggleExpanded = (id) => {

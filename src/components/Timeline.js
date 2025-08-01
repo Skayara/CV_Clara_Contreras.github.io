@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, MapPin, Award, ChevronDown, ChevronUp, ExternalLink, GraduationCap } from 'lucide-react';
+import { Calendar, MapPin, Award, ChevronDown, ChevronUp, ExternalLink, GraduationCap, Clock, CheckCircle } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { timelineData } from '../data/cvData';
@@ -17,23 +17,43 @@ const Timeline = () => {
     congreso: { color: 'from-red-500 to-pink-500', bg: 'bg-red-50', text: 'text-red-700', label: 'Congresos' },
     certificacion: { color: 'from-indigo-500 to-violet-600', bg: 'bg-indigo-50', text: 'text-indigo-700', label: 'Certificación' },
     docencia: { color: 'from-teal-500 to-cyan-600', bg: 'bg-teal-50', text: 'text-teal-700', label: 'Docencia' },
-    estudios: { color: 'from-amber-500 to-orange-600', bg: 'bg-amber-50', text: 'text-amber-700', label: 'Estudios' }
+    estudios: { color: 'from-amber-500 to-orange-600', bg: 'bg-amber-50', text: 'text-amber-700', label: 'Estudios' },
+    // Nuevos filtros para estado
+    'en-curso': { color: 'from-emerald-500 to-green-600', bg: 'bg-emerald-50', text: 'text-emerald-700', label: 'En curso' },
+    finalizado: { color: 'from-gray-500 to-slate-600', bg: 'bg-gray-50', text: 'text-gray-700', label: 'Finalizado' }
   };
 
   const filterTypes = [
-    { key: 'all', label: 'Todos' },
-    ...Object.entries(typeConfig).map(([key, config]) => ({ key, label: config.label }))
+    { key: 'all', label: 'Todos', icon: null },
+    // Separador visual para filtros de estado
+    { key: 'separator-estado', label: '— Estado —', disabled: true },
+    { key: 'en-curso', label: 'En curso', icon: Clock },
+    { key: 'finalizado', label: 'Finalizado', icon: CheckCircle },
+    // Separador visual para filtros de tipo
+    { key: 'separator-tipo', label: '— Tipo —', disabled: true },
+    ...Object.entries(typeConfig)
+      .filter(([key]) => !['en-curso', 'finalizado'].includes(key))
+      .map(([key, config]) => ({ key, label: config.label, icon: null }))
   ];
 
   // Filtrar y ordenar datos por año (más reciente primero)
   const filteredData = (
     selectedType === 'all'
       ? timelineData
+      : selectedType === 'en-curso'
+        ? timelineData.filter(item => item.tags && item.tags.includes('En curso'))
+      : selectedType === 'finalizado'
+        ? timelineData.filter(item => item.tags && item.tags.includes('Finalizado'))
       : selectedType === 'docencia'
         ? timelineData.filter(item => item.tags && item.tags.includes('Docencia'))
         : selectedType === 'proyecto'
           ? timelineData.filter(item => item.tags && item.tags.includes('Proyecto'))
-          : timelineData.filter(item => item.type === selectedType)
+        : selectedType === 'colaboracion_europea'
+          ? timelineData.filter(item =>
+              (item.tags && item.tags.includes('Europa')) ||
+              item.type === 'colaboracion_europea'
+            )
+        : timelineData.filter(item => item.type === selectedType)
   ).sort((a, b) => b.year - a.year); // Ordenar por año descendente
 
   const toggleExpanded = (id) => {
@@ -66,24 +86,42 @@ const Timeline = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          {filterTypes.map((type, index) => (
-            <motion.button
-              key={type.key}
-              onClick={() => setSelectedType(type.key)}
-              className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
-                selectedType === type.key
-                  ? 'bg-blue-500 text-white shadow-lg'
-                  : 'bg-white text-gray-600 hover:bg-blue-50 hover:text-blue-500 border border-gray-200'
-              }`}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-            >
-              {type.label}
-            </motion.button>
-          ))}
+          {filterTypes.map((type, index) => {
+            // Renderizar separadores
+            if (type.key.startsWith('separator-')) {
+              return (
+                <div key={type.key} className="w-full flex justify-center">
+                  <span className="text-sm text-gray-400 font-medium px-4 py-2">
+                    {type.label}
+                  </span>
+                </div>
+              );
+            }
+
+            // Renderizar botones de filtro normales
+            const IconComponent = type.icon;
+            
+            return (
+              <motion.button
+                key={type.key}
+                onClick={() => !type.disabled && setSelectedType(type.key)}
+                disabled={type.disabled}
+                className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2 ${
+                  selectedType === type.key
+                    ? 'bg-blue-500 text-white shadow-lg'
+                    : 'bg-white text-gray-600 hover:bg-blue-50 hover:text-blue-500 border border-gray-200'
+                } ${type.disabled ? 'cursor-not-allowed opacity-50' : ''}`}
+                whileHover={!type.disabled ? { scale: 1.05 } : {}}
+                whileTap={!type.disabled ? { scale: 0.95 } : {}}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+              >
+                {IconComponent && <IconComponent className="w-4 h-4" />}
+                {type.label}
+              </motion.button>
+            );
+          })}
         </motion.div>
 
         {/* Timeline */}
@@ -99,6 +137,10 @@ const Timeline = () => {
                   Object.assign(config, typeConfig.docencia);
                 }
                 const isExpanded = expandedItem === item.id;
+
+                // Determinar el estado del item para mostrar el indicador visual
+                const isEnCurso = item.tags && item.tags.includes('En curso');
+                const isFinalizado = item.tags && item.tags.includes('Finalizado');
 
                 return (
                   <motion.div
@@ -121,7 +163,9 @@ const Timeline = () => {
 
                     {/* Content Card */}
                     <motion.div
-                      className={`bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300`}
+                      className={`bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 ${
+                        isEnCurso ? 'ring-2 ring-emerald-200' : ''
+                      }`}
                       whileHover={{ y: -5 }}
                       layout
                     >
@@ -133,6 +177,19 @@ const Timeline = () => {
                               <span className={`px-3 py-1 rounded-full text-xs font-semibold ${config.bg} ${config.text} border`}>
                                 {config.label}
                               </span>
+                              {/* Indicador de estado */}
+                              {isEnCurso && (
+                                <span className="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-700 border border-emerald-200 flex items-center gap-1">
+                                  <Clock className="w-3 h-3" />
+                                  En curso
+                                </span>
+                              )}
+                              {isFinalizado && (
+                                <span className="px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-700 border border-gray-200 flex items-center gap-1">
+                                  <CheckCircle className="w-3 h-3" />
+                                  Finalizado
+                                </span>
+                              )}
                               <div className="flex items-center gap-1 text-gray-500">
                                 <Calendar className="w-4 h-4" />
                                 <span className="text-sm font-medium">{item.year}</span>
@@ -157,7 +214,9 @@ const Timeline = () => {
 
                         {/* Tags */}
                         <div className="flex flex-wrap gap-2 mt-4">
-                          {item.tags.map((tag, tagIndex) => (
+                          {item.tags
+                            .filter(tag => !['En curso', 'Finalizado'].includes(tag)) // Filtrar las tags de estado ya mostradas arriba
+                            .map((tag, tagIndex) => (
                             <motion.span
                               key={tagIndex}
                               className="px-3 py-1 bg-white/70 text-gray-700 text-xs font-medium rounded-lg border"

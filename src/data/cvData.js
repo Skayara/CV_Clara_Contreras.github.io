@@ -1,3 +1,12 @@
+// Función helper para manejar las rutas de imágenes en GitHub Pages
+const getImagePath = (imageName) => {
+  // Para GitHub Pages, necesitamos incluir el nombre del repositorio en la ruta
+  const baseUrl = process.env.NODE_ENV === 'production' 
+    ? '/CV_Clara_Contreras.github.io' 
+    : '';
+  return `${baseUrl}/images/${imageName}`;
+};
+
 export const personalInfo = {
   name: "Clara Contreras Nevares",                   
   title: "Ingeniera de ciberseguridad",             
@@ -7,8 +16,8 @@ export const personalInfo = {
   linkedin: "linkedin.com/in/ccontrerasn",           
   github: "github.com/Skayara",                      
   website: "https://mypublicinbox.com/Skayara",
-  photo: `${process.env.PUBLIC_URL || ''}/images/Foto4.jpg`,
-  avatar: `${process.env.PUBLIC_URL || ''}/images/Foto4.jpg`,
+  photo: getImagePath('Foto4.jpg'),
+  avatar: getImagePath('Foto4.jpg'),
   summary: `Soy una persona inquieta, siempre en busca de crecimiento y aprendizaje. A lo largo de mi formación, he demostrado iniciativa y participación en actividades técnicas y de gestión. Me gusta investigar tecnologías y temas por mi cuenta, y suelo formar equipos para desarrollar proyectos personales de manera eficiente.`  // texto bajo \switchcolumn
 };
 
@@ -34,7 +43,7 @@ achievements: [
   "Certificación de sistemas críticos bajo estándares internacionales (IEC 62443, NIST, ISO)",
   "Diseño e impartición de un programa formativo interno en Secure Coding"
 ],
-tags: ["Ciberseguridad", "SCADA", "Infraestructura Crítica", "Ferroviario", "IEC 62443", "NIST"]
+tags: ["Ciberseguridad", "SCADA", "Infraestructura Crítica", "Ferroviario", "IEC 62443", "NIST", "En curso"]
 
   },
   {
@@ -62,8 +71,7 @@ Profesora asociada en la Universidad Rey Juan Carlos, responsable del diseño e 
       "Actualización de contenidos teórico-prácticos alineados con los nuevos planes de estudio",
       "Dirección de 12-15 TFGs anuales con alta satisfacción en encuestas docentes"
     ],
-    tags: ["Docencia", "Universidad", "Ciberseguridad", "Malware", "Ciberinteligencia", "Gamificación"]
-
+    tags: ["Docencia", "Universidad", "Ciberseguridad", "Malware", "Ciberinteligencia", "Gamificación", "En curso"]
   },
   {
     id: 3,
@@ -85,8 +93,7 @@ Profesora en el curso de especialización en ciberseguridad de Linkia FP, respon
       "Implementación de un enfoque educativo basado en proyectos prácticos y demostraciones en vivo",
       "Formación de la primera promoción del curso con alta inserción laboral en el sector"
     ],
-    tags: ["Formación Profesional", "Ciberseguridad", "Seguridad Web", "Seguridad Android", "Educación Práctica"]
-
+    tags: ["Docencia", "Formación Profesional", "Ciberseguridad", "Seguridad Web", "Seguridad Android", "Educación Práctica", "Finalizado"]
   },
   {
     id: 4,
@@ -108,8 +115,7 @@ Investigación aplicada en modelado dinámico de riesgos cibernéticos industria
       "Validación de resultados y transferencia de avances tecnológicos a la empresa colaboradora",
       "Publicación de 1 paper en congreso internacional y envío de 1 artículo a revista científica"
     ],
-    tags: ["Proyecto", "Investigación", "I+D", "Machine Learning", "Ciberseguridad Industrial", "OT", "Python", "TensorFlow", "Scikit-learn"]
-
+    tags: ["Proyecto", "Investigación", "Europa", "Machine Learning", "Ciberseguridad Industrial", "OT", "Python", "TensorFlow", "Scikit-learn", "Finalizado"]
   },
   {
     id: 5,
@@ -130,8 +136,7 @@ Participación en el programa STEM Talent Girl como mentora para fomentar la pre
       "Organización de sesiones de shadowing grupales con una media de 6 participantes",
       "Diseño de materiales y talleres prácticos aplicados a ciberseguridad"
     ],
-    tags: ["STEM", "Mentoría", "Ciberseguridad", "Voluntariado", "Educación"]
-
+    tags: ["STEM", "Mentoría", "Ciberseguridad", "Voluntariado", "Educación", "Finalizado"]
   },
   {
     id: 6,
@@ -153,8 +158,7 @@ Trabajo en equipo de ciberinteligencia enfocado en la identificación, seguimien
       "Análisis de campañas de malware y amenazas avanzadas que derivaron en medidas preventivas efectivas",
       "Uso de herramientas como MISP, Maltego, VirusTotal, YARA y Splunk para automatizar procesos de inteligencia"
     ],
-    tags: ["Threat Intelligence", "OSINT", "Malware Analysis", "APT", "Ciberinteligencia", "SOC"]
-
+    tags: ["Threat Intelligence", "OSINT", "Malware Analysis", "APT", "Ciberinteligencia", "SOC", "Finalizado"]
   },
   {
     id: 7,
@@ -175,8 +179,7 @@ Responsable técnica y logística en la organización de eventos y competiciones
       "Implementación de infraestructura cloud estable y escalable para entornos de competición",
       "Coordinación efectiva de equipos técnicos voluntarios"
     ],
-    tags: ["Proyecto", "DevOps", "Eventos", "CTF", "Cloud", "Infraestructura", "Coordinación"]
-
+    tags: ["Proyecto", "DevOps", "Eventos", "CTF", "Cloud", "Infraestructura", "Coordinación", "Finalizado"]
   },
   {
     id: 8,
@@ -198,8 +201,7 @@ Impartición de clases particulares de apoyo académico en ciencias, humanidades
       "Alta tasa de aprobados en asignaturas técnicas y científicas",
       "Desarrollo de metodología flexible adaptada al perfil y necesidades de cada estudiante"
     ],
-    tags: ["Docencia", "Tutorías", "Programación", "Educación Académica", "Clases Particulares"]
-
+    tags: ["Docencia", "Tutorías", "Programación", "Educación Académica", "Clases Particulares", "Finalizado"]
   },
 
   // Educación
@@ -223,8 +225,7 @@ Investigación enfocada en el modelado predictivo de amenazas y el análisis de 
       "Avance en metodologías de modelado predictivo para amenazas industriales",
       "Formación avanzada en ciberseguridad industrial y análisis de riesgos"
     ],
-    tags: ["Doctorado", "Investigación", "Machine Learning", "Ciberseguridad Industrial"]
-
+    tags: ["Doctorado", "Investigación", "Machine Learning", "Ciberseguridad Industrial", "En curso"]
   },
   {
     id: 10,
@@ -248,8 +249,7 @@ Máster oficial en formación del profesorado para la enseñanza de informática
       "Diseño de unidades didácticas y material educativo propio",
       "Habilitación oficial para docencia en secundaria y bachillerato en curso"
     ],
-    tags: ["Pedagogía", "Innovación Educativa", "TIC"]
-
+    tags: ["Pedagogía", "Innovación Educativa", "TIC", "Finalizado"]
   },
   {
     id: 11,
@@ -274,7 +274,7 @@ Programa de posgrado finalizado en ciberseguridad y privacidad, con un enfoque e
       "Desarrollo de múltiples proyectos prácticos en pentesting y análisis",
       "Aplicación de conocimientos en entornos profesionales e investigación"
     ],
-    tags: ["Máster", "Ciberseguridad", "Privacidad", "GDPR"]
+    tags: ["Máster", "Ciberseguridad", "Privacidad", "GDPR", "Finalizado"]
   },
   {
     id: 12,
@@ -297,11 +297,10 @@ Título oficial de la URJC (240 ECTS), impartido en el campus de Móstoles, pion
 - Programa de mentoring-empresa desde primeros cursos con interacción real con el sector`,
     achievements: [
       "TFG: comparación de técnicas de Machine Learning para detección de ataques DDoS",
-      "Participación activa en competiciones universitarias de CTF, incluida la Liga de Ciberseguridad URJC :contentReference[oaicite:2]{index=2}",
+      "Participación activa en competiciones universitarias de CTF, incluida la Liga de Ciberseguridad URJC",
       "Realización de prácticas externas en entidad del sector de ciberseguridad"
     ],
-    tags: ["Grado", "Ciberseguridad", "Redes", "Pentesting", "CTF", "Criptografía"]
-
+    tags: ["Grado", "Ciberseguridad", "Redes", "Pentesting", "CTF", "Criptografía", "Finalizado"]
   },
   {
     id: 13,
@@ -323,7 +322,7 @@ Estudios musicales profesionales de grado medio con especialización en piano, d
       "Participación en conciertos regionales",
       "Desarrollo de disciplina y constancia aplicable a otros ámbitos"
     ],
-    tags: ["Música", "Piano", "Disciplina", "Arte"]
+    tags: ["Música", "Piano", "Disciplina", "Arte", "Finalizado"]
   },
   {
     id: 14,
@@ -344,10 +343,8 @@ Bachillerato con orientación científico-tecnológica, sentando las bases matem
     achievements: [
       "Nota media superior a 8.5"
     ],
-    tags: ["Bachillerato", "Ciencias", "Matemáticas", "Tecnología"]
+    tags: ["Bachillerato", "Ciencias", "Matemáticas", "Tecnología", "Finalizado"]
   },
-
-  // Certificaciones
   {
     id: 15,
     year: 2024,
@@ -368,7 +365,7 @@ Programa especializado en técnicas de mentoría para jóvenes en situación de 
       "Desarrollo de programa de mentoría personalizado",
       "Colaboración con 3 ONGs europeas"
     ],
-    tags: ["Mentoría", "Juventud", "STEM", "Inclusión Social"]
+    tags: ["Mentoría", "Juventud", "STEM", "Inclusión Social", "Finalizado"]
   },
   {
     id: 16,
@@ -390,7 +387,7 @@ Certificación internacional que valida conocimientos fundamentales en cibersegu
       "Aplicación inmediata en proyectos profesionales",
       "Base sólida para otras certificaciones"
     ],
-    tags: ["CSFPC", "Fundamentos", "Ciberseguridad", "Certificación Internacional"]
+    tags: ["CSFPC", "Fundamentos", "Ciberseguridad", "Certificación Internacional", "Finalizado"]
   },
   {
     id: 17,
@@ -412,7 +409,7 @@ Evaluación estandarizada de competencias en inglés para entornos profesionales
       "Capacidad para trabajar en entornos internacionales",
       "Acceso a documentación técnica en inglés sin limitaciones"
     ],
-    tags: ["Inglés", "B2", "Comunicación", "Internacional"]
+    tags: ["Inglés", "B2", "Comunicación", "Internacional", "Finalizado"]
   },
   {
     id: 18,
@@ -434,7 +431,7 @@ Certificación oficial de Cisco que valida competencias fundamentales en adminis
       "Capacidad para administrar servidores básicos",
       "Base sólida para certificaciones avanzadas en Linux"
     ],
-    tags: ["Linux", "CISCO", "Administración", "Sistemas"]
+    tags: ["Linux", "CISCO", "Administración", "Sistemas", "Finalizado"]
   },
   {
     id: 19,
@@ -456,7 +453,7 @@ Programa intensivo de formación en técnicas ofensivas de ciberseguridad, pente
       "Aplicación en auditorías reales de seguridad",
       "Desarrollo de exploits personalizados"
     ],
-    tags: ["Pentesting", "Hacking Ético", "Vulnerabilidades", "Exploits"]
+    tags: ["Pentesting", "Hacking Ético", "Vulnerabilidades", "Exploits", "Finalizado"]
   },
   {
     id: 20,
@@ -466,7 +463,7 @@ Programa intensivo de formación en técnicas ofensivas de ciberseguridad, pente
     type: "colaboracion_europea",
     description: `## Hands On Development – Erasmus+ KA2
 
-Proyecto de colaboración europea iniciado en abril de 2024 con finalización prevista en noviembre de 2025. Bajo la modalidad **KA220‑YOU (Juventud)**, este proyecto tiene como objetivo empoderar a jóvenes y organizaciones juveniles mediante acciones de participación cívica y desarrollo sostenible alineado con los Objetivos de Desarrollo Sostenible (ODS) de la ONU.
+Proyecto de colaboración europea iniciado en abril de 2024 con finalización prevista en noviembre de 2025. Bajo la modalidad **KA220‑YOU (Juventud)**, este proyecto tiene como objetivo empoderar a jóvenes y organizaciones juveniles mediante acciones de participación cívica y desarrollo sostenible alineado con los Objetivos de Desarrollo Sostenible (ODS) de la ONU.
 
 ### Objetivos principales
 - Fomentar el compromiso juvenil en acciones de desarrollo comunitario
@@ -485,7 +482,7 @@ Proyecto de colaboración europea iniciado en abril de 2024 con finalización 
       "Implementación de talleres no formales en múltiples países europeos"
     ],
 
-    tags: ["Proyecto", "Erasmus+ KA2", "Juventud", "ODS", "Capacitación", "Innovación"]
+    tags: ["Proyecto", "Erasmus+ KA2", "Juventud", "ODS", "Capacitación", "Innovación", "En curso"]
   },
   {
   id: 21,
@@ -505,7 +502,7 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
     "Soporte en coordinación y ejecución de talleres técnicos",
     "Planificación y logística del evento sin ánimo de lucro"
   ],
-  tags: ["Congreso", "Organización", "Ciberseguridad", "CTF", "HackOn"]
+  tags: ["Congreso", "Organización", "Ciberseguridad", "CTF", "HackOn", "Finalizado"]
   },
   {
     id: 22,
@@ -526,7 +523,7 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Contribución clave en la transición a formato online y coordinación técnica en directo",
       "Moderación de sesiones y participación con audiencia virtual de más de 200 personas"
     ],
-    tags: ["Congreso", "Presentación", "Ciberseguridad", "HackOn", "Evento Online"]
+    tags: ["Congreso", "Presentación", "Ciberseguridad", "HackOn", "Evento Online", "Finalizado"]
   },
   {
     id: 23,
@@ -547,7 +544,7 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Supervisión de infraestructura, talleres y competición CTF",
       "Creación de retos para el CTF"
     ],
-    tags: ["Congreso", "Ciberseguridad", "HackOn", "CTF", "Organización"]
+    tags: ["Congreso", "Ciberseguridad", "HackOn", "CTF", "Organización", "Finalizado"]
   },
   {
     id: 24,
@@ -567,15 +564,15 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Coordinación de la infraestructura y soporte técnico en talleres y competición CTF para más de 170 asistentes",
       "Contribución en la planificación técnica y logística del evento"
     ],
-    tags: ["Congreso", "Ciberseguridad", "HackOn", "CTF", "Organización"]
+    tags: ["Congreso", "Ciberseguridad", "HackOn", "CTF", "Organización", "Finalizado"]
   },
   {
     id: 25,
     year: 2024,
-    title: "HackOn 2024 – VI Jornadas de Ciberseguridad URJC",
+    title: "HackOn 2024 – VI Jornadas de Ciberseguridad URJC",
     company: "URJC",
     type: "congreso",
-    description: `## HackOn 2024 – VI Jornadas de Ciberseguridad URJC
+    description: `## HackOn 2024 – VI Jornadas de Ciberseguridad URJC
 
   Celebrado el 22 de febrero de 2024 en el campus de Móstoles de la URJC, esta edición fue organizada por estudiantes del Grado en Ingeniería de la Ciberseguridad y combinó ponencias, talleres, sesiones CTF y actividades híbridas, tanto presenciales como online.
 
@@ -584,11 +581,11 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
   - Coordinación en contacto con empresas, patrocinadores y ponentes para la agenda y organización.  
   - Acompañamiento durante las sesiones y facilitación de tareas de staff técnico.`,
     achievements: [
-      "Apoyo y supervisión de nuevos voluntarios durante HackOn 2024",
+      "Apoyo y supervisión de nuevos voluntarios durante HackOn 2024",
       "Gestión de relaciones con ponentes y empresas colaboradoras",
       "Contribución en la logística técnica de talleres, ponencias y CTF"
     ],
-    tags: ["Congreso", "Ciberseguridad", "HackOn", "Voluntariado", "Organización"]
+    tags: ["Congreso", "Ciberseguridad", "HackOn", "Voluntariado", "Organización", "Finalizado"]
   },
   {
     id: 26,
@@ -609,7 +606,7 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Soporte operativo en talleres, conferencias y sesiones prácticas para más de 800 asistentes",
       "Apoyo en la logística técnica y coordinación del equipo técnico durante el evento"
     ],
-    tags: ["Congreso", "Ciberseguridad", "Navaja Negra", "Organización", "Staff Técnico"]
+    tags: ["Congreso", "Ciberseguridad", "Navaja Negra", "Organización", "Staff Técnico", "Finalizado"]
   },
   {
     id: 27,
@@ -625,7 +622,7 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Miembro del staff técnico en HackTricks Track durante RootedCon 2023",
       "Soporte técnico en conferencias y talleres sobre explotación, Pentesting y análisis de vulnerabilidades"
     ],
-    tags: ["Congreso", "RootedCon", "HackTricks", "Staff Técnico", "Explotación", "Pentesting"]
+    tags: ["Congreso", "RootedCon", "HackTricks", "Staff Técnico", "Exploits", "Pentesting", "Finalizado"]
   },
   {
     id: 28,
@@ -645,7 +642,7 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Presentación técnica dirigida a perfiles en ciberseguridad, reclutamiento y talento digital",
       "Conexión con profesionales del sector y visibilidad en evento multisala"
     ],
-    tags: ["Congreso", "OSINT", "TalentDigital", "Ponente", "Ciberseguridad"]
+    tags: ["Congreso", "OSINT", "TalentDigital", "Ponente", "Ciberseguridad", "Finalizado"]
   },
   {
     id: 29,
@@ -665,7 +662,7 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Presentación técnica integrada en curso sobre ciberseguridad e IA",
       "Contribución al debate académico sobre riesgos de IA aplicada a seguridad"
     ],
-    tags: ["Congreso", "Ciberseguridad", "Inteligencia Artificial", "Cursos de Verano URJC", "OSINT", "Ataques IA"]
+    tags: ["Congreso", "Ciberseguridad", "Inteligencia Artificial", "Cursos de Verano URJC", "OSINT", "Ataques IA", "Finalizado"]
   },
   {
     id: 30,
@@ -678,12 +675,12 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
   Celebrado el 12 de abril de 2024 en la Universidad Rey Juan Carlos (URJC), el XIV Congreso RITSI es el congreso estatal dedicado al sector de la ingeniería informática en España. Esta edición incluyó charlas técnicas, networking con empresas innovadoras y presentaciones de expertos del sector. 
 
   ### Ponencia Destacada
-  - “**Secretos Ocultos y Marcas Invisibles: El Arte de la Steganografía y el Watermarking**”, explora técnicas avanzadas para ocultar información en medios digitales, proteger la propiedad intelectual y detectar manipulaciones de contenido.`,
+  - "**Secretos Ocultos y Marcas Invisibles: El Arte de la Steganografía y el Watermarking**", explora técnicas avanzadas para ocultar información en medios digitales, proteger la propiedad intelectual y detectar manipulaciones de contenido.`,
     achievements: [
       "Ponente en el XIV Congreso RITSI 2024 con charla técnica sobre esteganografía y watermarking",
       "Divulgación de técnicas avanzadas en comunidad universitaria y profesional"
     ],
-    tags: ["Congreso", "RITSI", "Esteganografía", "Watermarking", "Ciberseguridad", "Ponente"]
+    tags: ["Congreso", "RITSI", "Esteganografía", "Watermarking", "Ciberseguridad", "Ponente", "Finalizado"]
   },
   {
     id: 31,
@@ -699,7 +696,7 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Soporte en coordinación técnica y logística del track durante el evento",
       "Participación en la interacción y coordinación con ponentes y actividades del track"
     ],
-    tags: ["Congreso", "RootedCon", "Securiters", "Staff Técnico", "OSINT", "Ingeniería Social"]
+    tags: ["Congreso", "RootedCon", "Securiters", "Staff Técnico", "OSINT", "Ingeniería Social", "Finalizado"]
   },
   {
     id: 32,
@@ -715,7 +712,7 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Soporte técnico en workshops del evento",
       "Acompañamiento y guía de participantes durante sesiones prácticas"
     ],
-    tags: ["Congreso", "OSINT", "Ciberinteligencia", "Staff Técnico", "Madrid"]
+    tags: ["Congreso", "OSINT", "Ciberinteligencia", "Staff Técnico", "Madrid", "Finalizado"]
   },
   {
     id: 33,
@@ -736,7 +733,7 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Apoyo en operaciones técnicas y coordinación durante sesiones sobre DevSecOps y MLOps",
       "Colaboración con ponentes y coordinación logística en evento multidisciplinar"
     ],
-    tags: ["Congreso", "X‑Ops Conference", "DevSecOps", "MLOps", "Staff Técnico", "Organización"]
+    tags: ["Congreso", "X‑Ops Conference", "DevSecOps", "MLOps", "Staff Técnico", "Organización", "Finalizado"]
   },
   {
     id: 34,
@@ -752,7 +749,7 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Formación y coordinación de voluntarios",
       "Coordinación y gestión de espacios técnicos en la jornada"
     ],
-    tags: ["Congreso", "Jornada AWS", "Organización", "URJC", "Cloud Security"]
+    tags: ["Congreso", "Jornada AWS", "Organización", "URJC", "Cloud Security", "Finalizado"]
   },
   {
     id: 35,
@@ -768,7 +765,7 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Laboratorios en vivo de análisis estático y dinámico de binarios maliciosos",
       "Uso de herramientas Objective‑See y técnicas de detección programática en macOS"
     ],
-    tags: ["Training", "Mac Malware", "Análisis Dinámico/Estático", "Objective‑See", "OBTS v6"]
+    tags: ["Training", "Mac Malware", "Análisis Dinámico/Estático", "Objective‑See", "OBTS v6", "Finalizado"]
   },
   {
     id: 36,
@@ -784,21 +781,154 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Acceso a todas las ponencias y grabaciones técnicas sobre seguridad macOS",
       "Participación en tracks formativos y networking con expertos del sector"
     ],
-    tags: ["Congreso", "Mac Security", "Objective by the Sea", "Asistente", "Patrick Wardle"]
+    tags: ["Congreso", "Mac Security", "Objective by the Sea", "Asistente", "Patrick Wardle", "Finalizado"]
+  },
+  {
+    id: 37,
+    year: 2021,
+    title: "Vicepresidenta y Secretaria – Asociación Estudiantil Veritas URJC",
+    company: "Asociación Estudiantil Veritas URJC",
+    type: "voluntariado",
+    description: `## Fundación y liderazgo en Asociación Estudiantil Veritas
+
+  Participación como miembro fundador en 2021 de la Asociación Estudiantil Veritas de la URJC, dedicada a la promoción de la comunidad universitaria de carácter católico y apoyo personal y espiritual entre estudiantes.`,
+    achievements: [
+      "Miembro fundador de la Asociación Estudiantil Veritas en la URJC",
+      "Desempeño de las funciones de vicepresidenta y secretaria dentro de la junta directiva",
+      "Coordinación de actividades asociativas, comunicaciones oficiales y reuniones internas"
+    ],
+    tags: ["Voluntariado", "Asociación Estudiantil", "URJC", "Liderazgo", "Veritas", "Finalizado"]
+  },
+  {
+    id: 38,
+    year: 2020,
+    title: "Fundadora Asociación Seek&Hack URJC",
+    company: "Seek&Hack",
+    type: "voluntariado",
+    description: `## Fundación y liderazgo en la Asociación Seek&Hack
+
+  Participación como miembro fundador en 2020 de Seek&Hack, asociación universitaria de la URJC creada por estudiantes del Grado en Ingeniería de la Ciberseguridad, dedicada a la divulgación y aprendizaje colaborativo en ciberseguridad.`,
+    achievements: [
+      "Impulso de la creación de Seek&Hack como asociación oficial desde su fundación en 2020",
+      "Desempeño de los roles de vicepresidenta y secretaria/coordinadora técnica dentro de la junta directiva",
+      "Organización de actividades, talleres formativos y competiciones CTF para la comunidad universitaria"
+    ],
+    tags: ["Voluntariado", "Asociación Estudiantil", "Ciberseguridad", "Seek&Hack", "URJC", "Finalizado"]
+  },
+  {
+    id: 39,
+    year: 2021,
+    title: "Colaboración con Junta Directiva – ANGER URJC",
+    company: "Asociación General de Estudiantes y Representantes (ANGER)",
+    type: "voluntariado",
+    description: `## Colaboración continua con ANGER URJC
+
+  Participación activa desde 2021 hasta la actualidad en la Junta Directiva de ANGER URJC, asociación oficial de estudiantes de la Universidad Rey Juan Carlos dedicada a representar, informar y fomentar la implicación estudiantil.`,
+
+    achievements: [
+      "Colaboración estable con la Junta Directiva de ANGER desde 2021",
+      "Apoyo en la coordinación de actividades y representación estudiantil",
+      "Participación en eventos universitarios, talleres y campañas internas"
+    ],
+    tags: ["Voluntariado", "Representación Estudiantil", "URJC", "En curso"]
+  },
+  {
+    id: 40,
+    year: 2021,
+    title: "Representante Estudiantil – Junta de Escuela ETSII URJC",
+    company: "ETSII URJC",
+    type: "voluntariado",
+    description: `## Representación estudiantil en Junta de Escuela
+
+  Papel como representante del sector estudiantil en la Junta de Escuela de la Escuela Técnica Superior de Ingeniería Informática (ETSII) de la URJC durante los cursos académicos 2021‑2023. Integrante con dedicación continua, participación con derecho a voto y membresía en comisiones internas.`,
+    achievements: [
+      "Representante con voto del alumnado en la Junta de Escuela de la ETSII (2021‑2023)",
+      "Participación activa en comisiones de Infraestructuras e Investigación",
+      "Contribución en la toma de decisiones institucionales sobre planes de estudio y recursos académicos"
+    ],
+    tags: ["Voluntariado", "Representación Estudiantil", "ETSII", "URJC", "Comités", "Infraestructura", "Investigación", "Finalizado"]
+  },
+  {
+    id: 41,
+    year: 2023,
+    title: "Delegada de Curso – Ingeniería de la Ciberseguridad URJC",
+    company: "ETSII URJC",
+    type: "voluntariado",
+    description: `## Representación estudiantil como delegada de curso
+
+  Actuó como delegada de clase para el curso 2022‑2023 del Grado en Ingeniería de la Ciberseguridad en la ETSII de la Universidad Rey Juan Carlos, representando a compañeros ante la delegación de estudiantes de la escuela conforme a los estatutos oficiales de la URJC.`,
+    achievements: [
+      "Elección como delegada de curso con representación ante la delegación de estudiantes ETSII URJC",
+      "Participación con derecho a voto en reuniones formales de delegados y subdelegados",
+      "Colaboración en comisiones de coordinación académica y apoyo institucional"
+    ],
+    tags: ["Voluntariado", "Representación Estudiantil", "ETSII", "URJC", "Finalizado"]
+  },
+  {
+    id: 42,
+    year: 2023,
+    title: "Presidenta Joven – AA.AA Don Bosco Salesianos Atocha",
+    company: "Asociación Antiguos Alumnos de Don Bosco – Salesianos Atocha",
+    type: "voluntariado",
+    description: `## Liderazgo juvenil en la Asociación de Antiguos Alumnos de Don Bosco Atocha
+
+  Ejercicio del cargo de Presidenta Joven desde 2023 hasta la actualidad en la Asociación de Antiguos Alumnos de Don Bosco del colegio Salesianos Atocha, Madrid. Participación activa en representación estudiantil, liderazgo generacional y coordinación de iniciativas asociativas vinculadas al ámbito educativo y comunitario.`,
+    achievements: [
+      "Elección como Presidenta Joven de la Asociación de Antiguos Alumnos de Don Bosco Atocha desde 2023",
+      "Colaboración en la organización de actividades comunitarias, formativas y eventos de exalumnos",
+      "Puente generacional entre la comunidad estudiantil y la asociación senior"
+    ],
+    tags: ["Voluntariado", "Antiguos Alumnos", "Don Bosco", "Leadership", "Salesianos Atocha", "En curso"]
+  },
+  {
+    id: 43,
+    year: 2023,
+    title: "Presidenta Joven Federal – Federación Felipe Rinaldi AA.AA Don Bosco",
+    company: "Federación Felipe Rinaldi",
+    type: "voluntariado",
+    description: `## Representación juvenil en la Federación Felipe Rinaldi de Antiguos Alumnos Don Bosco
+
+  Designada Presidenta Joven Federal en 2023 dentro de la Federación Felipe Rinaldi, organización regional perteneciente a la Confederación Nacional de Antiguos Alumnos/as de Don Bosco (Familia Salesiana). Participación en representación juvenil con funciones estratégicas y de coordinación entre asociaciones locales.`,
+    achievements: [
+      "Elección como Presidenta Joven Federal en la Federación Felipe Rinaldi en 2023",
+      "Representación de jóvenes exalumnos en asambleas federales y comisiones regionales",
+      "Coordinación de iniciativas interasociativas y participación en encuentros juveniles"
+    ],
+    tags: ["Voluntariado", "Antiguos Alumnos", "Federación Felipe Rinaldi", "Representación Juvenil", "Don Bosco", "En curso"]
+  },
+  {
+    id: 44,
+    year: 2024,
+    title: "Presidenta Joven Nacional – Confederación Nacional AA.AA. Don Bosco",
+    company: "Confederación Nacional de Antiguos Alumnos y Antiguas Alumnas Don Bosco",
+    type: "voluntariado",
+    description: `## Liderazgo juvenil en la Confederación Nacional de Antiguos Alumnos/as Don Bosco (España)
+
+  Designada Presidenta Joven Nacional en 2024, con presencia activa en todas las asambleas federales y comisiones estatales. Coordinación de actividades juveniles y representación interasociativa en toda España, incluyendo gestión de proyectos europeos.`,
+    achievements: [
+      "Elección como Presidenta Joven Nacional en la Confederación Don Bosco en 2024",
+      "Participación en asambleas federales y coordinación estatal de actividades juveniles",
+      "Impulso a la participación en proyectos de intercambio y voluntariado Erasmus+ en el marco de Don Bosco Youth‑Net"
+    ],
+    tags: ["Proyecto", "Voluntariado", "Representación Juvenil", "Confederación Don Bosco", "Erasmus+", "Liderazgo", "España", "En curso"]
+  },
+  {
+    id: 45,
+    year: 2020,
+    title: "Fundadora de Valkyrias – Comunidad de Mujeres en Ciberseguridad",
+    company: "Valkyrias",
+    type: "proyecto",
+    description: `## Fundación y crecimiento de Valkyrias
+
+  Participación en la creación de Valkyrias en 2020, comunidad de mujeres profesionales y entusiastas en ciberseguridad en España. La iniciativa tiene como objetivo visibilizar, formar y conectar a mujeres en áreas como OSINT, forense, malware, inteligencia, pentesting e ingeniería social. La comunidad colabora con otras organizaciones y eventos, y organiza actividades internas y formaciones.`,
+
+    achievements: [
+      "Impulso y fundación de Valkyrias como red de mujeres en ciberseguridad en 2020",
+      "Colaboración con otras comunidades y participación activa en eventos de seguridad como ponentes o asistentes",
+      "Organización de actividades internas, talleres, foros y creación de red profesional para mujeres en ciberseguridad"
+    ],
+    tags: ["Proyecto", "Comunidad", "Mujeres en Ciberseguridad", "OSINT", "Forense", "Pentesting", "En curso"]
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

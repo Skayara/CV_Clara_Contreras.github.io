@@ -207,7 +207,7 @@ const Timeline = () => {
                                 <div>
                                   <h4 className="flex items-center gap-2 text-lg font-semibold text-gray-900 mb-4">
                                     <Award className="w-5 h-5 text-yellow-500" />
-                                    Logros Destacados
+                                    Logros destacados
                                   </h4>
                                   <div className="space-y-3">
                                     {item.achievements.map((achievement, achIndex) => (

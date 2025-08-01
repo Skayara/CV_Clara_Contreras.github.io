@@ -684,7 +684,114 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Divulgación de técnicas avanzadas en comunidad universitaria y profesional"
     ],
     tags: ["Congreso", "RITSI", "Esteganografía", "Watermarking", "Ciberseguridad", "Ponente"]
+  },
+  {
+    id: 31,
+    year: 2024,
+    title: "Track Securiters – RootedCon 2024",
+    company: "RootedCon",
+    type: "congreso",
+    description: `## Staff del Track Securiters – RootedCon 2024
+
+  Track especializado organizado por Securiters dentro de RootedCon Madrid 2024, centrado en conciencia y técnicas de seguridad vinculadas a ingeniería social, OSINT y análisis de riesgos. Participación como miembro del staff técnico del track, colaborando en los preparativos y soporte durante el congreso.`,
+    achievements: [
+      "Miembro del staff técnico del Track Securiters en RootedCon 2024",
+      "Soporte en coordinación técnica y logística del track durante el evento",
+      "Participación en la interacción y coordinación con ponentes y actividades del track"
+    ],
+    tags: ["Congreso", "RootedCon", "Securiters", "Staff Técnico", "OSINT", "Ingeniería Social"]
+  },
+  {
+    id: 32,
+    year: 2024,
+    title: "OsintomátiCOPS Conference 2024 – Madrid",
+    company: "OsintomátiCOPS Conference",
+    type: "congreso",
+    description: `## Staff del evento OsintomátiCOPS 2024
+
+  Conferencia presencial celebrada en Madrid, dedicada a OSINT y ciberinteligencia, dirigida a cuerpos de seguridad y servicios de inteligencia. Soporte técnico y logístico, así como acompañamiento a participantes durante talleres y sesiones.`,
+    achievements: [
+      "Parte del staff técnico de OsintomátiCOPS Conference 2024 en Madrid",
+      "Soporte técnico en workshops del evento",
+      "Acompañamiento y guía de participantes durante sesiones prácticas"
+    ],
+    tags: ["Congreso", "OSINT", "Ciberinteligencia", "Staff Técnico", "Madrid"]
+  },
+  {
+    id: 33,
+    year: 2024,
+    title: "X‑Ops Conference 2024 – Madrid",
+    company: "X‑Ops Conference",
+    type: "congreso",
+    description: `## Staff Técnico y Organización – X‑Ops Conference 2024
+
+  Conferencia celebrada del **22 al 23 de noviembre de 2024** en la ETSISI‑UPM, Madrid. Evento especializado en DevOps, DevSecOps, MLOps, AIOps y transformación digital en infraestructuras TI.
+
+  ### Actividades Principales
+  - Coordinación técnica y logística del staff durante conferencias, talleres y sesiones de networking.
+  - Soporte en la infraestructura técnica y ejecución de presentaciones relacionadas con seguridad y operaciones.
+  - Colaboración con ponentes y equipo organizador en materia técnica y operativa.`,
+    achievements: [
+      "Participación en el staff técnico y organizativo de la X‑Ops Conference 2024 en Madrid",
+      "Apoyo en operaciones técnicas y coordinación durante sesiones sobre DevSecOps y MLOps",
+      "Colaboración con ponentes y coordinación logística en evento multidisciplinar"
+    ],
+    tags: ["Congreso", "X‑Ops Conference", "DevSecOps", "MLOps", "Staff Técnico", "Organización"]
+  },
+  {
+    id: 34,
+    year: 2025,
+    title: "Jornada AWS 2025",
+    company: "URJC / DevSecCon Global Community",
+    type: "congreso",
+    description: `## Organización Jornada AWS – Campus Móstoles URJC
+
+  Evento organizado por DevSecCon Global Community (de la que formo parte) en colaboración con la Universidad Rey Juan Carlos, celebrado el 8 de febrero de 2025 en el Campus Móstoles.`,
+    achievements: [
+      "Parte del equipo organizador de la Jornada AWS 2025 en la URJC",
+      "Formación y coordinación de voluntarios",
+      "Coordinación y gestión de espacios técnicos en la jornada"
+    ],
+    tags: ["Congreso", "Jornada AWS", "Organización", "URJC", "Cloud Security"]
+  },
+  {
+    id: 35,
+    year: 2023,
+    title: "The Art of Mac Malware: Detection & Analysis",
+    company: "Objective by the Sea (OBTS v6)",
+    type: "estudios",
+    description: `## The Art of Mac Malware: Detection & Analysis (Training OBTS v6)
+
+  Curso intensivo impartido por Patrick Wardle en el marco del evento OBTS v6 (Objective by the Sea), celebrado del 9 al 11 de octubre de 2023 en Marbella, España. Se centró en técnicas prácticas para detectar y analizar malware en macOS.`,
+    achievements: [
+      "Formación práctica avanzada en análisis de malware macOS con Patrick Wardle",
+      "Laboratorios en vivo de análisis estático y dinámico de binarios maliciosos",
+      "Uso de herramientas Objective‑See y técnicas de detección programática en macOS"
+    ],
+    tags: ["Training", "Mac Malware", "Análisis Dinámico/Estático", "Objective‑See", "OBTS v6"]
+  },
+  {
+    id: 36,
+    year: 2023,
+    title: "Asistente en OBTS v6.0",
+    company: "Objective by the Sea",
+    type: "congreso",
+    description: `## OBTS v6.0 – Objective by the Sea (Marbella, España)
+
+  Participación como asistente en la conferencia y programa de formación OBTS v6.0 celebrado el 12 y 13 de octubre de 2023 en Marbella. Jornada orientada a seguridad en macOS impartida por expertos como Patrick Wardle y otros investigadores Apple.`,
+    achievements: [
+      "Asistencia al evento OBTS v6.0 en Marbella, España",
+      "Acceso a todas las ponencias y grabaciones técnicas sobre seguridad macOS",
+      "Participación en tracks formativos y networking con expertos del sector"
+    ],
+    tags: ["Congreso", "Mac Security", "Objective by the Sea", "Asistente", "Patrick Wardle"]
   }
+
+
+
+
+
+
 
 
 

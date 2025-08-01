@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, MapPin, Award, ChevronDown, ChevronUp, ExternalLink, GraduationCap, Clock, CheckCircle } from 'lucide-react';
+import { Calendar, MapPin, Award, ChevronDown, ChevronUp, ExternalLink, GraduationCap, Clock, CheckCircle, MoreHorizontal, Mic } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { timelineData } from '../data/cvData';
@@ -8,6 +8,7 @@ import { timelineData } from '../data/cvData';
 const Timeline = () => {
   const [expandedItem, setExpandedItem] = useState(null);
   const [selectedType, setSelectedType] = useState('all');
+  const [currentPage, setCurrentPage] = useState(1);
 
   const typeConfig = {
     trabajo: { color: 'from-blue-500 to-blue-600', bg: 'bg-blue-50', text: 'text-blue-700', label: 'Trabajo' },
@@ -18,6 +19,7 @@ const Timeline = () => {
     certificacion: { color: 'from-indigo-500 to-violet-600', bg: 'bg-indigo-50', text: 'text-indigo-700', label: 'Certificación' },
     docencia: { color: 'from-teal-500 to-cyan-600', bg: 'bg-teal-50', text: 'text-teal-700', label: 'Docencia' },
     estudios: { color: 'from-amber-500 to-orange-600', bg: 'bg-amber-50', text: 'text-amber-700', label: 'Estudios' },
+    ponencia: { color: 'from-pink-500 to-rose-600', bg: 'bg-pink-50', text: 'text-pink-700', label: 'Ponencia' },
     // Nuevos filtros para estado
     'en-curso': { color: 'from-emerald-500 to-green-600', bg: 'bg-emerald-50', text: 'text-emerald-700', label: 'En curso' },
     finalizado: { color: 'from-gray-500 to-slate-600', bg: 'bg-gray-50', text: 'text-gray-700', label: 'Finalizado' }
@@ -33,11 +35,15 @@ const Timeline = () => {
     { key: 'separator-tipo', label: '— Tipo —', disabled: true },
     ...Object.entries(typeConfig)
       .filter(([key]) => !['en-curso', 'finalizado'].includes(key))
-      .map(([key, config]) => ({ key, label: config.label, icon: null }))
+      .map(([key, config]) => ({ 
+        key, 
+        label: config.label, 
+        icon: null // Quitamos todos los iconos para simplificar
+      }))
   ];
 
   // Filtrar y ordenar datos por año (más reciente primero)
-  const filteredData = (
+  const allFilteredData = (
     selectedType === 'all'
       ? timelineData
       : selectedType === 'en-curso'
@@ -46,22 +52,53 @@ const Timeline = () => {
         ? timelineData.filter(item => item.tags && item.tags.includes('Finalizado'))
       : selectedType === 'docencia'
         ? timelineData.filter(item => item.tags && item.tags.includes('Docencia'))
-        : selectedType === 'proyecto'
-          ? timelineData.filter(item => item.tags && item.tags.includes('Proyecto'))
-        : selectedType === 'colaboracion_europea'
-          ? timelineData.filter(item =>
-              (item.tags && item.tags.includes('Europa')) ||
-              item.type === 'colaboracion_europea'
-            )
-        : timelineData.filter(item => item.type === selectedType)
+      : selectedType === 'proyecto'
+        ? timelineData.filter(item => item.tags && item.tags.includes('Proyecto'))
+      : selectedType === 'ponencia'
+        ? timelineData.filter(item =>
+            (item.tags && item.tags.includes('Ponencia')) ||
+            item.type === 'ponencia'
+          )
+      : selectedType === 'colaboracion_europea'
+        ? timelineData.filter(item =>
+            (item.tags && item.tags.includes('Europa')) ||
+            item.type === 'colaboracion_europea'
+          )
+      : timelineData.filter(item => item.type === selectedType)
   ).sort((a, b) => b.year - a.year); // Ordenar por año descendente
+
+  // Paginación progresiva
+  const ITEMS_PER_PAGE = 10;
+  const itemsToShow = currentPage * ITEMS_PER_PAGE;
+  const filteredData = allFilteredData.slice(0, itemsToShow);
+  const hasMoreItems = allFilteredData.length > itemsToShow;
+  const remainingItems = allFilteredData.length - itemsToShow;
 
   const toggleExpanded = (id) => {
     setExpandedItem(expandedItem === id ? null : id);
   };
 
+  const handleFilterChange = (newType) => {
+    setSelectedType(newType);
+    setCurrentPage(1); // Reset página cuando cambia el filtro
+    setExpandedItem(null); // Cerrar cualquier item expandido
+  };
+
+  const loadMore = () => {
+    setCurrentPage(prev => prev + 1);
+  };
+
+  const showLess = () => {
+    setCurrentPage(1);
+    // Scroll suave hacia arriba de la timeline
+    const timelineElement = document.querySelector('#timeline-section');
+    if (timelineElement) {
+      timelineElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="timeline-section" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -104,7 +141,7 @@ const Timeline = () => {
             return (
               <motion.button
                 key={type.key}
-                onClick={() => !type.disabled && setSelectedType(type.key)}
+                onClick={() => !type.disabled && handleFilterChange(type.key)}
                 disabled={type.disabled}
                 className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2 ${
                   selectedType === type.key
@@ -124,6 +161,24 @@ const Timeline = () => {
           })}
         </motion.div>
 
+        {/* Results Counter */}
+        <motion.div
+          className="text-center mb-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
+          <p className="text-gray-600">
+            Mostrando <span className="font-semibold text-blue-600">{filteredData.length}</span> de{' '}
+            <span className="font-semibold text-gray-900">{allFilteredData.length}</span> entradas
+            {selectedType !== 'all' && (
+              <span className="ml-2 px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">
+                {filterTypes.find(f => f.key === selectedType)?.label}
+              </span>
+            )}
+          </p>
+        </motion.div>
+
         {/* Timeline */}
         <div className="max-w-4xl mx-auto">
           <div className="relative">
@@ -133,9 +188,15 @@ const Timeline = () => {
             <AnimatePresence mode="popLayout">
               {filteredData.map((item, index) => {
                 const config = typeConfig[item.type] || { color: 'from-gray-400 to-gray-500', bg: 'bg-gray-50', text: 'text-gray-700', label: 'Desconocido' };
+                
+                // Configuración especial para items con tags específicas
                 if (selectedType === 'docencia' && item.tags && item.tags.includes('Docencia')) {
                   Object.assign(config, typeConfig.docencia);
                 }
+                if (selectedType === 'ponencia' && item.tags && item.tags.includes('Ponencia')) {
+                  Object.assign(config, typeConfig.ponencia);
+                }
+                
                 const isExpanded = expandedItem === item.id;
 
                 // Determinar el estado del item para mostrar el indicador visual
@@ -150,7 +211,7 @@ const Timeline = () => {
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: 50 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    transition={{ duration: 0.5, delay: (index % ITEMS_PER_PAGE) * 0.1 }}
                   >
                     {/* Timeline Dot */}
                     <motion.div 
@@ -158,7 +219,7 @@ const Timeline = () => {
                       whileHover={{ scale: 1.2 }}
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
-                      transition={{ delay: index * 0.1 + 0.3, type: "spring" }}
+                      transition={{ delay: (index % ITEMS_PER_PAGE) * 0.1 + 0.3, type: "spring" }}
                     />
 
                     {/* Content Card */}
@@ -222,7 +283,7 @@ const Timeline = () => {
                               className="px-3 py-1 bg-white/70 text-gray-700 text-xs font-medium rounded-lg border"
                               initial={{ opacity: 0, scale: 0 }}
                               animate={{ opacity: 1, scale: 1 }}
-                              transition={{ delay: index * 0.1 + tagIndex * 0.05 }}
+                              transition={{ delay: (index % ITEMS_PER_PAGE) * 0.1 + tagIndex * 0.05 }}
                             >
                               {tag}
                             </motion.span>
@@ -293,6 +354,40 @@ const Timeline = () => {
                 );
               })}
             </AnimatePresence>
+
+            {/* Load More / Show Less Buttons */}
+            <div className="text-center mt-12 space-y-4">
+              {hasMoreItems && (
+                <motion.button
+                  onClick={loadMore}
+                  className="px-8 py-4 rounded-xl font-semibold transition-all duration-300 flex items-center gap-3 mx-auto bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:shadow-lg"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <MoreHorizontal className="w-5 h-5" />
+                  Ver más ({remainingItems > ITEMS_PER_PAGE ? ITEMS_PER_PAGE : remainingItems} de {remainingItems} restantes)
+                  <ChevronDown className="w-5 h-5" />
+                </motion.button>
+              )}
+
+              {currentPage > 1 && (
+                <motion.button
+                  onClick={showLess}
+                  className="px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2 mx-auto bg-gray-500 text-white hover:bg-gray-600"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                >
+                  <ChevronUp className="w-4 h-4" />
+                  Mostrar menos
+                </motion.button>
+              )}
+            </div>
           </div>
         </div>
       </div>

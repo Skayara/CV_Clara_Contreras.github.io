@@ -27,7 +27,6 @@ const Footer = () => {
             >
               <h3 className="text-2xl font-bold">{personalInfo.name}</h3>
               <p className="text-gray-400 max-w-2xl mx-auto">
-                Desarrollador apasionado creando experiencias digitales excepcionales. 
                 Siempre buscando nuevos desafíos y oportunidades de colaboración.
               </p>
             </motion.div>

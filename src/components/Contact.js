@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Globe, Calendar } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Globe } from 'lucide-react';
 import { personalInfo } from '../data/cvData';
 
 const Contact = () => {
@@ -22,17 +22,17 @@ const Contact = () => {
       color: 'from-blue-500 to-blue-600'
     },
     {
+      icon: Phone,
+      label: 'Teléfono',
+      value: personalInfo.phone,
+      href: `tel:${personalInfo.phone}`,
+      color: 'from-green-500 to-green-600'
+    },
+    {
       icon: MapPin,
       label: 'Ubicación',
       value: personalInfo.location,
       color: 'from-purple-500 to-purple-600'
-    },
-    {
-      icon: Calendar,
-      label: 'Reunión',
-      value: 'Programar llamada',
-      href: 'https://calendly.com/tunombre',
-      color: 'from-orange-500 to-red-500'
     }
   ];
 
@@ -52,7 +52,7 @@ const Contact = () => {
     {
       icon: Globe,
       label: 'Website',
-      href: `https://${personalInfo.website}`,
+      href: personalInfo.website,
       color: 'hover:bg-purple-600'
     }
   ];

@@ -642,7 +642,7 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Presentación técnica dirigida a perfiles en ciberseguridad, reclutamiento y talento digital",
       "Conexión con profesionales del sector y visibilidad en evento multisala"
     ],
-    tags: ["Congreso", "OSINT", "TalentDigital", "Ponente", "Ciberseguridad", "Finalizado"]
+    tags: ["Congreso", "OSINT", "TalentDigital", "Ponencia", "Ciberseguridad", "Finalizado"]
   },
   {
     id: 29,
@@ -680,7 +680,7 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Ponente en el XIV Congreso RITSI 2024 con charla técnica sobre esteganografía y watermarking",
       "Divulgación de técnicas avanzadas en comunidad universitaria y profesional"
     ],
-    tags: ["Congreso", "RITSI", "Esteganografía", "Watermarking", "Ciberseguridad", "Ponente", "Finalizado"]
+    tags: ["Congreso", "RITSI", "Esteganografía", "Watermarking", "Ciberseguridad", "Ponencia", "Finalizado"]
   },
   {
     id: 31,
@@ -928,7 +928,173 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Organización de actividades internas, talleres, foros y creación de red profesional para mujeres en ciberseguridad"
     ],
     tags: ["Proyecto", "Comunidad", "Mujeres en Ciberseguridad", "OSINT", "Forense", "Pentesting", "En curso"]
+  },
+  {
+    id: 46,
+    year: 2025,
+    title: "Ponencia sobre blindaje cibernético en despachos legales",
+    company: "Tinku Legal",
+    type: "ponencia",
+    description: `## ¿Cómo blindar los despachos legales ante ciberataques?
+
+  Charla ofrecida como parte de los contenidos divulgativos de Tinku Legal (febrero de 2025), centrada en estrategias prácticas para proteger despachos de abogados frente a ransomware, phishing, filtraciones de datos y otros riesgos digitales. Presentada como fundadora de la comunidad Valkyrias, con enfoque en protección legal, implementación de medidas técnicas y cumplimiento normativo.`,
+    achievements: [
+      "Exposición de medidas clave para blindar despachos legales ante ciberataques",
+      "Divulgación de estrategias de protección, cifrado, autenticación multifactor y auditoría de seguridad",
+      "Presentada en canal oficial de Tinku Legal con alcance profesional"
+    ],
+    tags: ["Ponencia", "Ciberseguridad Legal", "Despachos", "Formación", "Blindaje Digital", "Finalizado"]
+  },
+  {
+    id: 48,
+    year: 2023,
+    title: "Formación y entrevista con Uniway Technologies",
+    company: "Uniway Technologies",
+    type: "ponencia",
+    description: `## Sesión formativa y entrevista divulgativa con Uniway Technologies
+
+  Formación impartida en 2023 a profesionales de Uniway Technologies en colaboración con Valkyrias, centrada en riesgos de ciberseguridad empresarial, vectores de ataque, OSINT, dorking y factor humano. Además, se realizó una entrevista divulgativa para contextualizar y ampliar los contenidos presentados.`,
+    achievements: [
+      "Sesión formativa sobre ciberseguridad empresarial, vectores de ataque y factor humano",
+      "Entrevista publicada compartiendo reflexiones sobre la sesión y mejores prácticas",
+      "Colaboración con la comunidad Valkyrias para difusión de recursos técnicos y cultura de seguridad"
+    ],
+    tags: ["Formación", "Ciberseguridad", "Riesgos Empresariales", "OSINT", "Uniway Technologies", "Valkyrias", "Finalizado"]
+  },
+  {
+    id: 49,
+    year: 2020,
+    title: "Ciberseguridad para estudiantes de ASIR",
+    company: "Salesianos Atocha",
+    type: "ponencia",
+    description: `Formación impartida en enero de 2020 para estudiantes del Grado Superior ASIR en Salesianos Atocha, centrada en introducción a ciberseguridad, vectores de ataque y concienciación técnica.`,
+    achievements: [
+      "Charla introductoria de ciberseguridad para estudiantes de ASIR",
+      "Análisis de amenazas comunes y buenas prácticas de protección",
+      "Taller práctico ofensivo de un día con ejercicios de vectores de ataque"
+    ],
+    tags: ["Formación", "FP ASIR", "Ciberseguridad", "Salesianos Atocha", "Finalizado"]
+  },
+  {
+    id: 50,
+    year: 2021,
+    title: "Ciberseguridad para estudiantes de ASIR",
+    company: "Salesianos Atocha",
+    type: "ponencia",
+    description: `Formación impartida en enero de 2021 a estudiantes del Grado Superior ASIR en Salesianos Atocha, con enfoque en OSINT, footprinting, vectores de ataque y factor humano.`,
+    achievements: [
+      "Sesión formativa sobre OSINT, dorking y vectores de ataque",
+      "Concienciación sobre el factor humano en ciberseguridad",
+      "Taller ofensivo de un día con ejercicios reales adaptados a FP"
+    ],
+    tags: ["Formación", "FP ASIR", "Ciberseguridad", "Salesianos Atocha", "Finalizado"]
+  },
+  {
+    id: 51,
+    year: 2022,
+    title: "Ciberseguridad para estudiantes de ASIR",
+    company: "Salesianos Atocha",
+    type: "ponencia",
+    description: `Formación impartida en enero de 2022 a estudiantes de ASIR en Salesianos Atocha, incluyendo APTs, fases de ataque, dorking y metodología Red Team básica.`,
+    achievements: [
+      "Introducción a amenazas avanzadas (APT) y fases de ataque",
+      "Taller práctico ofensivo de un día con dorking y escenarios Red Team",
+      "Experiencia práctica en entorno formativo controlado"
+    ],
+    tags: ["Formación", "FP ASIR", "Ciberseguridad", "Salesianos Atocha", "Finalizado"]
+  },
+  {
+    id: 52,
+    year: 2023,
+    title: "Ciberseguridad para estudiantes de ASIR",
+    company: "Salesianos Atocha",
+    type: "ponencia",
+    description: `Formación impartida en enero de 2023 a estudiantes ASIR en Salesianos Atocha, centrada en vectores de ataque, OSINT y taller ofensivo en entorno controlado.`,
+    achievements: [
+      "Charla sobre fases de ataque y técnicas OSINT aplicadas",
+      "Taller práctico ofensivo de un día enfocado a detección y explotación",
+      "Material didáctico promovido por la comunidad Valkyrias"
+    ],
+    tags: ["Formación", "FP ASIR", "Ciberseguridad", "Salesianos Atocha", "Finalizado"]
+  },
+  {
+    id: 53,
+    year: 2024,
+    title: "Ciberseguridad para estudiantes de ASIR",
+    company: "Salesianos Atocha",
+    type: "ponencia",
+    description: `Formación impartida en enero de 2024 a estudiantes del ciclo ASIR en Salesianos Atocha. Enfoque en factor humano, vectores de ataque prácticos y taller ofensivo técnico.` ,
+    achievements: [
+      "Sensibilización sobre riesgos vinculados al factor humano en ciberseguridad",
+      "Taller práctico ofensivo de un día incluyendo footprinting, dorking y vulnerabilidades web",
+      "Coordinación didáctica con recursos complementarios aportados por Valkyrias"
+    ],
+    tags: ["Formación", "FP ASIR", "Ciberseguridad", "Salesianos Atocha", "Finalizado"]
+  },
+  {
+    id: 54,
+    year: 2025,
+    title: "CiberBosco 2025",
+    company: "Salesianos Atocha",
+    type: "congreso",
+    description: `## CiberBosco 2025 – Jornada de Ciberseguridad en Salesianos Atocha
+
+  Celebrada el **3 de febrero de 2025** en Salesianos Atocha, esta jornada técnica denominada CiberBosco incluyó en su programación charlas sobre seguridad en redes, pentesting y hardware hacking, junto a un taller ofensivo tipo CTF impartido a estudiantes de ciclos de Informática y Telecomunicaciones.`,  
+    achievements: [
+      "Organización completa del evento CiberBosco 2025, desde planificación a ejecución técnica",
+      "Facilitación de un taller ofensivo tipo CTF práctico dividido por equipos"
+    ],
+    tags: ["Congreso", "Ciberseguridad", "Salesianos Atocha", "CTF", "Pentesting", "Hardware Hacking", "Finalizado"]
+  },
+  {
+    id: 5,
+    year: 2022,
+    title: "Introducción a OSINT y esteganografía – Curso CTF URJC",
+    company: "URJC ETSII CTF Competitivo",
+    type: "ponencia",
+    description: `Sesión formativa como parte del curso “CTF Competitivo” de la ETSII URJC, enfocada en técnicas de OSINT y esteganografía para estudiantes universitarios de ingeniería.`,
+    achievements: [
+      "Charla y taller de OSINT y esteganografía dentro del curso CTF Competitivo URJC",
+      "Introducción práctica a herramientas y metodologías de reconocimiento en ciberseguridad",
+      "Desarrollo retos CTF"
+    ],
+    tags: ["CTF", "OSINT", "Esteganografía", "Curso", "Finalizado"]
+  },
+  {
+    id: 54,
+    year: 2023,
+    title: "Introducción a OSINT y esteganografía – Curso CTF URJC",
+    company: "URJC ETSII CTF Competitivo",
+    type: "ponencia",
+    description: `Sesión formativa impartida como parte del curso “CTF Competitivo” de la ETSII URJC, enfocada en técnicas de OSINT y esteganografía para estudiantes universitarios de ingeniería.`,
+    achievements: [
+      "Charla y taller de OSINT y esteganografía dentro del curso CTF Competitivo URJC",
+      "Introducción práctica a herramientas y metodologías de reconocimiento en ciberseguridad",
+      "Desarrollo retos CTF"
+    ],
+    tags: ["CTF", "OSINT", "Esteganografía", "Curso", "Finalizado"]
+  },
+  {
+    id: 55,
+    year: 2024,
+    title: "Análisis forense y metadatos – Curso CTF URJC",
+    company: "URJC ETSII CTF Competitivo",
+    type: "ponencia",
+    description: `Sesión formativa impartida dentro del curso “CTF Competitivo” de la ETSII URJC, orientada a análisis forense digital y extracción de metadatos (e‑mail, logs, RAM, disco) para preparación de retos competitivos.`,
+    achievements: [
+      "Taller práctico sobre análisis forense digital y extracción de metadatos",
+      "Aplicación de herramientas como Volatility, Wireshark y Autopsy",
+      "Soporte al módulo forense del curso formativo 2023‑24",
+      "Desarrollo de retos CTF"
+    ],
+    tags: ["CTF", "Forense", "Metadatos", "Curso", "Finalizado"]
   }
+
+
+
+
+
+
 
 
 

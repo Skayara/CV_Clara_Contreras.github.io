@@ -1104,7 +1104,87 @@ Realización de prácticas docentes en 2025 en Salesianos Atocha como profesora 
       "Apoyo en contenidos de ciberseguridad y prácticas formativas"
     ],
     tags: ["Prácticas", "FP", "Ciberseguridad", "Salesianos Atocha", "Finalizado"]
+  },
+  {
+    id: 57,
+    year: 2024,
+    title: "Dirección TFG: Monitorización de Infraestructuras en Tiempo Real",
+    company: "URJC",
+    type: "docencia",
+    description: `Dirección de Trabajo Fin de Grado del Grado en Ingeniería de la Ciberseguridad (Móstoles) sobre el diseño e implementación de un sistema de monitorización de infraestructuras en tiempo real.`,
+    achievements: [
+      "Tutoría completa del TFG con defensa y entrega final",
+      "Aplicación de técnicas de monitorización de sistemas críticos",
+      "Calificación final: 8,6 (NT)"
+    ],
+    tags: ["Docencia", "TFG", "Ciberseguridad", "URJC", "Finalizado"]
+  },
+  {
+    id: 58,
+    year: 2024,
+    title: "Dirección TFG: AI‑Based Phishing Email Detection",
+    company: "URJC",
+    type: "docencia",
+    description: `Dirección de Trabajo Fin de Grado del Grado en Ingeniería del Software (Móstoles) sobre la detección de phishing en correos electrónicos mediante técnicas de inteligencia artificial.`,
+    achievements: [
+      "Supervisión metodológica de análisis de phishing con IA",
+      "Defensa y aprobación con calificación 9,5 (SB)"
+    ],
+    tags: ["Docencia", "TFG", "Ciberseguridad", "URJC", "IA", "Phishing", "Finalizado"]
+  },
+  {
+    id: 59,
+    year: 2024,
+    title: "Dirección TFG: Ingeniería Social y Mitigación de Ataques",
+    company: "URJC",
+    type: "docencia",
+    description: `Dirección de TFG del Grado en Ingeniería de la Ciberseguridad enfocado en impacto y mitigación de ataques basados en el factor humano.`,
+    achievements: [
+      "Supervisión de investigación aplicada en ingeniería social",
+      "Calificación final: 7,4 (NT)"
+    ],
+    tags: ["Docencia", "TFG", "Ciberseguridad", "URJC", "Ingeniería Social", "Finalizado"]
+  },
+  {
+    id: 60,
+    year: 2024,
+    title: "Dirección TFG: Respuesta a Incidentes y Resiliencia Digital",
+    company: "URJC",
+    type: "docencia",
+    description: `Dirección de TFG del Grado en Ingeniería de la Ciberseguridad sobre resiliencia digital, regulación DORA y el rol de blockchain en ciberseguridad bancaria.`,
+    achievements: [
+      "Supervisión de TFG aplicado a normativas DORA y uso de blockchain",
+      "Calificación final: 8 (NT)"
+    ],
+    tags: ["Docencia", "TFG", "Ciberseguridad", "URJC", "Blockchain", "DORA", "Finalizado"]
+  },
+  {
+    id: 61,
+    year: 2024,
+    title: "Dirección TFG: Clasificación de URLs Maliciosas con ML",
+    company: "URJC",
+    type: "docencia",
+    description: `Dirección de TFG del Grado en Ingeniería de la Ciberseguridad sobre aprendizaje automático para detección y clasificación de URLs maliciosas.`,
+    achievements: [
+      "Tutoría del desarrollo de modelos de machine learning para seguridad",
+      "Calificación final: 8 (NT)"
+    ],
+    tags: ["Docencia", "TFG", "Ciberseguridad", "URJC", "Machine Learning", "Finalizado"]
+  },
+  {
+    id: 62,
+    year: 2024,
+    title: "Dirección TFG: Actualización de Políticas de Seguridad NIST",
+    company: "URJC",
+    type: "docencia",
+    description: `Dirección de TFG del Grado en Ingeniería de Computadores sobre la actualización de políticas de seguridad basadas en NIST en un proyecto de investigación multidisciplinar.`,
+    achievements: [
+      "Supervisión y orientación de la implementación de políticas NIST",
+      "Calificación final: 9,1 (SB)"
+    ],
+    tags: ["Docencia", "TFG", "Ciberseguridad", "URJC", "NIST", "Finalizado"]
   }
+
 
 
 

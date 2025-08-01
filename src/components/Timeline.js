@@ -20,6 +20,7 @@ const Timeline = () => {
     docencia: { color: 'from-teal-500 to-cyan-600', bg: 'bg-teal-50', text: 'text-teal-700', label: 'Docencia' },
     estudios: { color: 'from-amber-500 to-orange-600', bg: 'bg-amber-50', text: 'text-amber-700', label: 'Estudios' },
     ponencia: { color: 'from-pink-500 to-rose-600', bg: 'bg-pink-50', text: 'text-pink-700', label: 'Ponencia' },
+    tfg: { color: 'from-cyan-500 to-blue-600', bg: 'bg-cyan-50', text: 'text-cyan-700', label: 'TFG' },
     // Nuevos filtros para estado
     'en-curso': { color: 'from-emerald-500 to-green-600', bg: 'bg-emerald-50', text: 'text-emerald-700', label: 'En curso' },
     finalizado: { color: 'from-gray-500 to-slate-600', bg: 'bg-gray-50', text: 'text-gray-700', label: 'Finalizado' }
@@ -58,6 +59,15 @@ const Timeline = () => {
         ? timelineData.filter(item =>
             (item.tags && item.tags.includes('Ponencia')) ||
             item.type === 'ponencia'
+          )
+      : selectedType === 'tfg'
+        ? timelineData.filter(item =>
+            (item.tags && (
+              item.tags.includes('TFG') ||
+              item.tags.includes('tfg') ||
+              item.tags.includes('Tfg')
+            )) ||
+            item.type === 'tfg'
           )
       : selectedType === 'colaboracion_europea'
         ? timelineData.filter(item =>
@@ -195,6 +205,13 @@ const Timeline = () => {
                 }
                 if (selectedType === 'ponencia' && item.tags && item.tags.includes('Ponencia')) {
                   Object.assign(config, typeConfig.ponencia);
+                }
+                if (selectedType === 'tfg' && item.tags && (
+                  item.tags.includes('TFG') ||
+                  item.tags.includes('tfg') ||
+                  item.tags.includes('Tfg')
+                )) {
+                  Object.assign(config, typeConfig.tfg);
                 }
                 
                 const isExpanded = expandedItem === item.id;

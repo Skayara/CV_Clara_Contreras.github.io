@@ -45,18 +45,18 @@ tags: ["Ciberseguridad", "SCADA", "Infraestructura Crítica", "Ferroviario", "IE
     type: "trabajo",
     description: `## Docencia Universitaria en Ciberseguridad
 
-    Profesora asociada en la Universidad Rey Juan Carlos, responsable del diseño e impartición de asignaturas de ciberseguridad, incluyendo actualización de contenidos teóricos y prácticos según los planes oficiales del Ministerio.
-    
-    ### Asignaturas Impartidas
-    - Malware y Amenazas Dirigidas
-    - Inteligencia de la Seguridad
-    - Seguridad Informática
-    
-    ### Responsabilidades Principales
-    - Diseño de planes formativos, temarios y laboratorios virtuales de ciberseguridad para asignaturas especializadas.
-    - Impartición de clases en Fundamentos de Ciberseguridad, Análisis de Malware e Inteligencia de la Seguridad.
-    - Dirección de Trabajos Fin de Grado (TFG) y asesoría académica a estudiantes.
-    - Integración de metodologías innovadoras como gamificación para fomentar el aprendizaje práctico.`,
+Profesora asociada en la Universidad Rey Juan Carlos, responsable del diseño e impartición de asignaturas de ciberseguridad, incluyendo actualización de contenidos teóricos y prácticos según los planes oficiales del Ministerio.
+
+### Asignaturas Impartidas
+- Malware y Amenazas Dirigidas
+- Inteligencia de la Seguridad
+- Seguridad Informática
+
+### Responsabilidades Principales
+- Diseño de planes formativos, temarios y laboratorios virtuales de ciberseguridad para asignaturas especializadas.
+- Impartición de clases, laboratorios y exámenes.
+- Dirección de Trabajos Fin de Grado (TFG) y asesoría académica a estudiantes.
+- Integración de metodologías innovadoras como gamificación para fomentar el aprendizaje práctico.`,
     achievements: [
       "Creación de laboratorios virtuales para análisis de malware y ciberinteligencia",
       "Actualización de contenidos teórico-prácticos alineados con los nuevos planes de estudio",
@@ -71,21 +71,22 @@ tags: ["Ciberseguridad", "SCADA", "Infraestructura Crítica", "Ferroviario", "IE
     title: "Profesora Curso Especialización Ciberseguridad",
     company: "Linkia FP",
     type: "trabajo",
-    description: `## Formación Profesional Especializada
+    description: `## Formación Profesional Especializada en Ciberseguridad
 
-Coordinación e impartición de curso de especialización en ciberseguridad para técnicos superiores.
+Profesora en el curso de especialización en ciberseguridad de Linkia FP, responsable del diseño e impartición de asignaturas prácticas en Seguridad Web y Seguridad Android para técnicos superiores.
 
-### Módulos Formativos
-- Hacking Ético y Pentesting
-- Análisis Forense Digital
-- Gestión de Incidentes de Seguridad
-- Normativa y Compliance`,
+### Responsabilidades Principales
+- Desarrollo completo de temarios, materiales y laboratorios prácticos para las asignaturas del curso.
+- Impartición de clases con enfoque 100% práctico, incluyendo demostraciones y proyectos reales.
+- Evaluación de estudiantes y seguimiento personalizado para su desarrollo profesional.
+- Coordinación de charlas con empresas y fomento del contacto con la industria.`,
     achievements: [
-      "Diseño curricular completo del curso",
-      "95% de empleabilidad de los graduados",
-      "Colaboración con empresas para prácticas profesionales"
+      "Diseño desde cero de los contenidos y laboratorios prácticos de Seguridad Web y Seguridad Android",
+      "Implementación de un enfoque educativo basado en proyectos prácticos y demostraciones en vivo",
+      "Formación de la primera promoción del curso con alta inserción laboral en el sector"
     ],
-    tags: ["Formación Profesional", "Ciberseguridad", "Pentesting"]
+    tags: ["Formación Profesional", "Ciberseguridad", "Seguridad Web", "Seguridad Android", "Educación Práctica"]
+
   },
   {
     id: 4,
@@ -93,21 +94,22 @@ Coordinación e impartición de curso de especialización en ciberseguridad para
     title: "Investigadora en DICYME",
     company: "URJC",
     type: "trabajo",
-    description: `## Dynamic Industrial Cyberrisk Modelling based on Evidence
+    description: `## Dynamic Industrial Cyberrisk Modelling based on Evidence (DICYME)
 
-Investigación en modelado dinámico de riesgos cibernéticos industriales basado en evidencias.
+Investigación aplicada en modelado dinámico de riesgos cibernéticos industriales, combinando análisis de exposición pública de sistemas OT con técnicas de Machine Learning para predecir probabilidad de ataques.
 
-### Líneas de Investigación
-- Modelado predictivo de amenazas industriales
-- Análisis de riesgo en tiempo real
-- Machine Learning aplicado a ciberseguridad industrial
-- Desarrollo de frameworks de evaluación continua`,
+### Responsabilidades Principales
+- Gestión integral del proyecto, incluyendo investigación técnica, desarrollo de prototipos y coordinación con la empresa colaboradora.
+- Diseño e implementación de modelos predictivos para cuantificar la exposición de infraestructuras industriales y su riesgo de ataque.
+- Desarrollo de pruebas de concepto y validación en entornos reales junto a la empresa colaboradora.
+- Publicación de resultados en conferencias científicas y preparación de artículos para revistas especializadas.`,
     achievements: [
-      "Publicación de 8 artículos en revistas indexadas",
-      "Desarrollo de prototipo de sistema predictivo",
-      "Colaboración con 5 empresas industriales para validación"
+      "Desarrollo de varios prototipos para modelar y cuantificar riesgos cibernéticos en entornos OT",
+      "Validación de resultados y transferencia de avances tecnológicos a la empresa colaboradora",
+      "Publicación de 1 paper en congreso internacional y envío de 1 artículo a revista científica"
     ],
-    tags: ["Investigación", "I+D", "Machine Learning", "Ciberseguridad Industrial"]
+    tags: ["Investigación", "I+D", "Machine Learning", "Ciberseguridad Industrial", "OT", "Python", "TensorFlow", "Scikit-learn"]
+
   },
   {
     id: 5,
@@ -115,21 +117,21 @@ Investigación en modelado dinámico de riesgos cibernéticos industriales basad
     title: "Mentora STEM",
     company: "STEM Talent Girl",
     type: "voluntariado",
-    description: `## Mentoría en Tecnología y Ciberseguridad
+description: `## Mentoría en Tecnología y Ciberseguridad
 
-Programa de mentoría para fomentar la participación femenina en carreras STEM, especialmente en ciberseguridad.
+Participación en el programa STEM Talent Girl como mentora para fomentar la presencia femenina en carreras tecnológicas, ofreciendo acompañamiento personalizado en ciberseguridad y orientación profesional.
 
-### Actividades de Mentoría
-- Sesiones individuales de orientación profesional
-- Talleres prácticos de ciberseguridad
-- Preparación para competiciones técnicas
-- Networking con profesionales del sector`,
+### Responsabilidades Principales
+- Mentoría individual de estudiantes de secundaria y universidad, incluyendo orientación académica y profesional.
+- Diseño e impartición de talleres prácticos y sesiones de shadowing en ciberseguridad.
+- Elaboración de material propio y coordinación de actividades con empresas y universidades colaboradoras.`,
     achievements: [
-      "Mentoría a 12 estudiantes de secundaria y universidad",
-      "Organización de 6 talleres prácticos de ciberseguridad",
-      "85% de las mentees continuaron estudios STEM"
+      "Mentoría personalizada a 2 estudiantes durante un curso académico completo",
+      "Organización de sesiones de shadowing grupales con una media de 6 participantes",
+      "Diseño de materiales y talleres prácticos aplicados a ciberseguridad"
     ],
-    tags: ["STEM", "Mentoría", "Diversidad", "Ciberseguridad"]
+    tags: ["STEM", "Mentoría", "Ciberseguridad", "Voluntariado", "Educación"]
+
   },
   {
     id: 6,
@@ -139,19 +141,20 @@ Programa de mentoría para fomentar la participación femenina en carreras STEM,
     type: "trabajo",
     description: `## Análisis de Amenazas y Ciberinteligencia
 
-Análisis y correlación de amenazas cibernéticas, generación de informes de inteligencia y apoyo a operaciones de ciberseguridad.
+Trabajo en equipo de ciberinteligencia enfocado en la identificación, seguimiento y análisis de amenazas avanzadas, colaborando estrechamente con el SOC y otros equipos de seguridad para la mitigación de riesgos.
 
-### Responsabilidades Clave
-- Análisis de IOCs y TTPs de grupos APT
-- Desarrollo de informes de ciberinteligencia
-- Investigación de campañas de malware
-- Correlación de eventos de seguridad`,
+### Responsabilidades Principales
+- Monitoreo y análisis de IOCs, TTPs y huellas digitales de actores APT.
+- Investigación de amenazas emergentes y campañas de malware mediante OSINT, dark web y feeds privados.
+- Generación de alertas y elaboración de informes de inteligencia para apoyar operaciones del SOC.
+- Colaboración en la identificación de medidas preventivas y estrategias de mitigación.`,
     achievements: [
-      "Identificación temprana de 15 campañas de malware",
-      "Desarrollo de 50+ informes de inteligencia",
-      "Implementación de pipeline automatizado de análisis"
+      "Generación de 10-12 informes de ciberinteligencia y 3-4 alertas diarias para operaciones del SOC",
+      "Análisis de campañas de malware y amenazas avanzadas que derivaron en medidas preventivas efectivas",
+      "Uso de herramientas como MISP, Maltego, VirusTotal, YARA y Splunk para automatizar procesos de inteligencia"
     ],
-    tags: ["Threat Intelligence", "OSINT", "Malware Analysis", "APT"]
+    tags: ["Threat Intelligence", "OSINT", "Malware Analysis", "APT", "Ciberinteligencia", "SOC"]
+
   },
   {
     id: 7,
@@ -159,21 +162,21 @@ Análisis y correlación de amenazas cibernéticas, generación de informes de i
     title: "Responsable/Coordinadora Infraestructuras",
     company: "SeekNHack",
     type: "voluntariado",
-    description: `## Gestión de Infraestructura para Eventos de Ciberseguridad
+    description: `## Coordinación y Gestión de Infraestructura
 
-Coordinación técnica y logística de infraestructura para competiciones y eventos de ciberseguridad.
+Responsable técnica y logística en la organización de eventos y competiciones de ciberseguridad, incluyendo la planificación de entornos, despliegue de infraestructura y coordinación de equipos voluntarios.
 
-### Gestión de Infraestructura
-- Diseño de arquitecturas de red para CTFs
-- Administración de plataformas de competición
-- Coordinación de equipos técnicos voluntarios
-- Soporte técnico durante eventos`,
+### Responsabilidades Principales
+- Diseño y despliegue de infraestructuras cloud para competiciones CTF.
+- Administración de entornos web y plataformas de competición durante los eventos.
+- Coordinación de 10-12 voluntarios técnicos y soporte en tiempo real durante las actividades.
+- Supervisión de aspectos logísticos y técnicos para garantizar la continuidad de los eventos.`,
     achievements: [
-      "Gestión exitosa de 8 eventos con 500+ participantes",
-      "Implementación de infraestructura cloud escalable",
-      "Coordinación de equipo de 15 voluntarios técnicos"
+      "Implementación de infraestructura cloud estable y escalable para entornos de competición",
+      "Coordinación efectiva de equipos técnicos voluntarios"
     ],
-    tags: ["DevOps", "Eventos", "CTF", "Infraestructura"]
+    tags: ["DevOps", "Eventos", "CTF", "Cloud", "Infraestructura", "Coordinación"]
+
   },
   {
     id: 8,
@@ -181,21 +184,22 @@ Coordinación técnica y logística de infraestructura para competiciones y even
     title: "Ponente/Formadora",
     company: "Profesora particular",
     type: "trabajo",
-    description: `## Formación Técnica y Académica Personalizada
+    description: `## Formación Académica Personalizada
 
-Impartición de formación especializada en tecnología, programación y materias académicas.
+Impartición de clases particulares de apoyo académico en ciencias, humanidades y programación para estudiantes de educación secundaria y universitaria.
 
-### Áreas de Especialización
-- Programación (Python, C, Java)
-- Ciberseguridad y hacking ético
-- Matemáticas aplicadas a la informática
-- Preparación para certificaciones técnicas`,
+### Responsabilidades Principales
+- Tutorías individuales orientadas a refuerzo académico y preparación de exámenes.
+- Diseño de material de estudio y ejercicios prácticos adaptados al nivel de cada alumno.
+- Enseñanza de múltiples disciplinas: Matemáticas, Física, Química, Biología, Lengua, Historia, Economía, Inglés y Piano.
+- Apoyo en programación en Python, C y Java, con enfoque práctico para proyectos y ejercicios académicos.`,
     achievements: [
-      "Formación a 50+ estudiantes en programación",
-      "95% de aprobados en exámenes preparados",
-      "Desarrollo de metodología propia de enseñanza"
+      "Formación individualizada a 10-12 estudiantes de secundaria y universidad",
+      "Alta tasa de aprobados en asignaturas técnicas y científicas",
+      "Desarrollo de metodología flexible adaptada al perfil y necesidades de cada estudiante"
     ],
-    tags: ["Docencia", "Programación", "Formación Técnica"]
+    tags: ["Docencia", "Tutorías", "Programación", "Educación Académica", "Clases Particulares"]
+
   },
 
   // Educación
@@ -207,19 +211,20 @@ Impartición de formación especializada en tecnología, programación y materia
     type: "estudios",
     description: `## Programa Doctoral en Ciberseguridad Industrial
 
-Investigación doctoral enfocada en el desarrollo de metodologías avanzadas para la evaluación y mitigación de riesgos cibernéticos en entornos industriales.
+Investigación enfocada en el modelado predictivo de amenazas y el análisis de vulnerabilidades en entornos industriales críticos, con especial atención a sistemas ICS/SCADA.
 
 ### Línea de Investigación
-- Modelado predictivo de amenazas cibernéticas
-- Machine Learning aplicado a ciberseguridad
-- Análisis de vulnerabilidades en sistemas ICS/SCADA
-- Framework de respuesta automatizada ante incidentes`,
+- Modelado predictivo de amenazas cibernéticas en entornos OT
+- Análisis de vulnerabilidades en infraestructuras críticas
+- Evaluación de riesgos cibernéticos industriales
+- Aplicación de técnicas de Machine Learning y simulación
+`,
     achievements: [
-      "Desarrollo de algoritmo predictivo con 92% de precisión",
-      "Publicación de 6 artículos en conferencias internacionales",
-      "Colaboración con 3 proyectos europeos de I+D"
+      "Avance en metodologías de modelado predictivo para amenazas industriales",
+      "Formación avanzada en ciberseguridad industrial y análisis de riesgos"
     ],
     tags: ["Doctorado", "Investigación", "Machine Learning", "Ciberseguridad Industrial"]
+
   },
   {
     id: 10,
@@ -227,21 +232,24 @@ Investigación doctoral enfocada en el desarrollo de metodologías avanzadas par
     title: "Máster Formación del Profesorado",
     company: "URJC",
     type: "estudios",
-    description: `## Especialización en Docencia Universitaria
+    description: `## Especialización en Tecnología e Informática
 
-Formación pedagógica especializada para la docencia en educación superior en el ámbito de la ingeniería y tecnología.
+Máster en curso.
+
+Máster oficial en formación del profesorado para la enseñanza de informática y tecnología en secundaria, bachillerato y formación profesional, aplicable también a docencia universitaria.
 
 ### Competencias Desarrolladas
-- Metodologías didácticas activas
-- Evaluación por competencias
-- Diseño curricular en ingeniería
-- Innovación educativa con TIC`,
+- Gamificación, Aprendizaje Basado en Proyectos (ABP) y flipped classroom
+- Evaluación por competencias y diseño de unidades didácticas
+- Uso de TIC y metodologías activas en entornos educativos
+- Elaboración de planes de clase, actividades y rúbricas`,
     achievements: [
-      "Proyecto de innovación docente implementado",
-      "Diseño de metodología gamificada para ciberseguridad",
-      "Certificación en competencias digitales docentes"
+      "Prácticas docentes en aula aplicando metodologías activas",
+      "Diseño de unidades didácticas y material educativo propio",
+      "Habilitación oficial para docencia en secundaria y bachillerato en curso"
     ],
-    tags: ["Docencia", "Pedagogía", "Innovación Educativa"]
+    tags: ["Pedagogía", "Innovación Educativa", "TIC"]
+
   },
   {
     id: 11,
@@ -249,19 +257,22 @@ Formación pedagógica especializada para la docencia en educación superior en 
     title: "Máster Ciberseguridad y Privacidad",
     company: "UOC",
     type: "estudios",
-    description: `## Especialización Avanzada en Ciberseguridad
+    description: `## Especialización específica en Ciberseguridad
 
-Programa de posgrado enfocado en aspectos técnicos y legales de la ciberseguridad, con especialización en privacidad y protección de datos.
+Programa de posgrado finalizado en ciberseguridad y privacidad, con un enfoque eminentemente práctico en ofensiva, criptografía, biometría, análisis forense y cumplimiento normativo.
 
 ### Áreas de Especialización
-- Criptografía avanzada y PKI
-- Auditorías de seguridad y compliance
-- Análisis forense digital
-- Gestión de la privacidad y GDPR`,
+- Pentesting y ciberseguridad ofensiva
+- Análisis forense digital y respuesta a incidentes
+- Criptografía.
+- Biometría y autenticación.
+- ML y análisis de datos en ciberseguridad
+- Auditoría de seguridad y cumplimiento GDPR
+- Gestión integral de la privacidad y protección de datos`,
     achievements: [
-      "TFM sobre técnicas avanzadas de pentesting",
-      "Proyecto de auditoría real en empresa tecnológica",
-      "Especialización en análisis de malware avanzado"
+      "TFM enfocado en ciberseguridad ofensiva",
+      "Desarrollo de múltiples proyectos prácticos en pentesting y análisis",
+      "Aplicación de conocimientos en entornos profesionales e investigación"
     ],
     tags: ["Máster", "Ciberseguridad", "Privacidad", "GDPR"]
   },
@@ -273,19 +284,24 @@ Programa de posgrado enfocado en aspectos técnicos y legales de la cibersegurid
     type: "estudios",
     description: `## Grado en Ingeniería de la Ciberseguridad
 
-Formación integral en fundamentos técnicos de la ciberseguridad, incluyendo aspectos de redes, sistemas, criptografía y gestión de riesgos.
+Título oficial de la URJC (240 ECTS), impartido en el campus de Móstoles, pionero en España, con formación integral centrada en tecnología, procesos y normativa para entornos críticos.
 
-### Materias Destacadas
-- Fundamentos de Criptografía
-- Seguridad en Redes y Sistemas
-- Análisis de Malware
-- Gestión de Riesgos y Compliance`,
+### Plan de Estudios (selección destacada)
+- Criptografía
+- Técnicas de Hacking y Pentesting
+- Seguridad en Sistemas y Redes 
+- Malware y Amenazas Dirigidas
+- Inteligencia Artificial y Visión Artificial aplicada a ciberseguridad  
+- Auditoría, Análisis de Riesgos, y Protección de Infraestructuras Críticas
+- Inteligencia de la Ciberseguridad  
+- Programa de mentoring-empresa desde primeros cursos con interacción real con el sector`,
     achievements: [
-      "TFG: Comparación de técnicas ML para detección de ataques DDoS",
-      "Participación en equipo de CTF universitario",
-      "Prácticas en empresa líder en ciberseguridad"
+      "TFG: comparación de técnicas de Machine Learning para detección de ataques DDoS",
+      "Participación activa en competiciones universitarias de CTF, incluida la Liga de Ciberseguridad URJC :contentReference[oaicite:2]{index=2}",
+      "Realización de prácticas externas en entidad del sector de ciberseguridad"
     ],
-    tags: ["Grado", "Ciberseguridad", "Universidad", "CTF"]
+    tags: ["Grado", "Ciberseguridad", "Redes", "Pentesting", "CTF", "Criptografía"]
+
   },
   {
     id: 13,
@@ -304,7 +320,7 @@ Estudios musicales profesionales de grado medio con especialización en piano, d
 - Interpretación y expresión artística`,
     achievements: [
       "Recitales públicos anuales",
-      "Participación en concursos regionales",
+      "Participación en conciertos regionales",
       "Desarrollo de disciplina y constancia aplicable a otros ámbitos"
     ],
     tags: ["Música", "Piano", "Disciplina", "Arte"]
@@ -323,11 +339,10 @@ Bachillerato con orientación científico-tecnológica, sentando las bases matem
 - Matemáticas avanzadas
 - Física aplicada
 - Química general
+- Informática
 - Tecnología industrial`,
     achievements: [
-      "Nota media superior a 8.5",
-      "Participación en olimpiadas de matemáticas",
-      "Proyecto de robótica premiado a nivel regional"
+      "Nota media superior a 8.5"
     ],
     tags: ["Bachillerato", "Ciencias", "Matemáticas", "Tecnología"]
   },
@@ -341,7 +356,7 @@ Bachillerato con orientación científico-tecnológica, sentando las bases matem
     type: "certificacion",
     description: `## Certificación Internacional en Mentoría Juvenil
 
-Programa especializado en técnicas de mentoría para jóvenes en situación de vulnerabilidad, con enfoque en desarrollo de competencias STEM.
+Programa especializado en técnicas de mentoría para jóvenes en situación de vulnerabilidad.
 
 ### Competencias Certificadas
 - Técnicas de coaching y mentoría
@@ -349,7 +364,7 @@ Programa especializado en técnicas de mentoría para jóvenes en situación de 
 - Metodologías de inclusión social
 - Evaluación de impacto social`,
     achievements: [
-      "Aplicación práctica con 15 jóvenes mentorizados",
+      "Aplicación práctica con jóvenes mentorizados",
       "Desarrollo de programa de mentoría personalizado",
       "Colaboración con 3 ONGs europeas"
     ],
@@ -373,7 +388,7 @@ Certificación internacional que valida conocimientos fundamentales en cibersegu
     achievements: [
       "Aprobación en primer intento con calificación sobresaliente",
       "Aplicación inmediata en proyectos profesionales",
-      "Base sólida para certificaciones avanzadas"
+      "Base sólida para otras certificaciones"
     ],
     tags: ["CSFPC", "Fundamentos", "Ciberseguridad", "Certificación Internacional"]
   },
@@ -466,8 +481,7 @@ Proyecto de colaboración europea iniciado en abril de 2024 con finalización 
 - Sesiones de formación no formal y talleres comunitarios participativos`,
 
     achievements: [
-      "Participación en la primera reunión transnacional en Roma con seis organizaciones socias",
-      "Diseño de un módulo formativo piloto sobre ciudadanía activa",
+      "Participación en reuniones transnacionales en países de la Unión Europea con seis organizaciones socias, siendo sede de una de ellas.",
       "Implementación de talleres no formales en múltiples países europeos"
     ],
 

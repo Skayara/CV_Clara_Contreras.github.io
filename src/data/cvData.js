@@ -894,7 +894,7 @@ Evento organizado íntegramente por estudiantes del Grado en Ingeniería de la C
       "Representación de jóvenes exalumnos en asambleas federales y comisiones regionales",
       "Coordinación de iniciativas interasociativas y participación en encuentros juveniles"
     ],
-    tags: ["Voluntariado", "Antiguos Alumnos", "Federación Felipe Rinaldi", "Representación Juvenil", "Don Bosco", "En curso"]
+    tags: ["Voluntariado", "Antiguos Alumnos", "Federación Felipe Rinaldi", "Representación Juvenil", "Don Bosco", "Finalizado"]
   },
   {
     id: 44,
